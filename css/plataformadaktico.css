@@ -1,0 +1,971 @@
+@font-face {
+    font-family: JosefinB;
+    src: url(../font/JosefinSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: Gotham;
+    src: url(../font/Gotham\ Book\ Font.otf);
+}
+
+@font-face {
+    font-family: JosefinSB;
+    src: url(../font/JosefinSans-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: JosefinR;
+    src: url(../font/JosefinSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: JosefinL;
+    src: url(../font/JosefinSans-Light.ttf);
+}
+
+@font-face {
+    font-family: CoreSans;
+    src: url(../font/Core\ Sans\ M\ 45\ Regular.ttf);
+}
+@font-face {
+    font-family: RobotoB;
+    src: url(../font/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: RobotoM;
+    src: url(../font/Roboto-Medium.ttf);
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: Gotham;
+    
+}
+
+.mtop-0 {
+    margin-top: 0px !important;
+}
+
+.txt-46 {
+    font-size: 46px;
+}
+
+.txt-24 {
+    font-size: 24px;
+}
+
+a {
+    text-decoration: none;
+    color: snow;
+}
+
+.Roboto_medium{
+    font-family: RobotoM;
+}
+.Roboto_bold{
+    font-family: RobotoB;
+}
+
+.headerprincipal-index-daktico {
+    width: 100%;
+}
+
+.admin-index-daktico {
+    width: 100%;
+    height: 30px;
+    background: #130B24;
+    color: #E8E2F6;
+    display: flex;
+    justify-content: right;
+}
+
+.admin-index-daktico span {
+    font-family: CoreSans;
+    font-size: 12px;
+    margin-right: 40px;
+}
+
+.admin-index-daktico div {
+    display: flex;
+    align-items: center;
+}
+
+.admin-index-daktico div span {
+    margin-left: 5px;
+}
+
+.menu-index-daktico {
+    width: 100%;
+    height: 70px;
+    position: relative;
+    background: #fff;
+    color: #351F65 !important;
+    display: flex;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+.menu-index-daktico a {
+    color: #351F65 !important;
+    font-family: JosefinB;
+}
+
+.logo-index-daktico {
+    width: 10%;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.itemsmenu-index-daktico {
+    width: 90%;
+    display: flex;
+    justify-content: right;
+}
+
+.itemsmenu-index-daktico .items-index {
+    display: flex;
+    align-items: center;
+}
+
+.itemsmenu-index-daktico div {
+
+    font-weight: bold;
+    margin-right: 50px;
+}
+
+.linea {
+    background: #F21170;
+    content: '';
+    display: block;
+    position: relative;
+    width: 20px;
+    border: 2px solid transparent;
+    margin: auto;
+}
+
+.btndemo-index-daktico {
+    width: 150px;
+    height: 40px;
+    margin-right: 30px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.btndemo-index-daktico span {
+    color: #fff !important;
+    cursor: pointer;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 150px;
+    height: 40px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    background: #F4364C;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: normal !important;
+    margin-right: 0px !important;
+}
+
+.btndemo-index-daktico:hover {
+    background: #9A8FB2;
+}
+
+.principal-plataforma-daktico {
+    height: max-content;
+    width: 100%;
+
+    background: #F4F4F4;
+    padding-bottom: 70px;
+}
+
+.gridplataforma-daktico {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 80%;
+
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.item1-plataforma-daktico {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.gridfila1-plataforma-daktico {
+    font-family: JosefinB;
+}
+
+.gridfila2-plataforma-daktico {
+    margin-top: 40px;
+    padding-right: 70px;
+    font-family: JosefinR;
+}
+
+.gridfila3-plataforma-daktico {
+    margin-top: 60px;
+    font-family: JosefinR;
+}
+
+.btndemo-plataforma-daktico {
+    width: 170px;
+    height: 50px;
+
+    margin-right: 30px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.btndemo-plataforma-daktico span {
+    cursor: pointer;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 170px;
+    height: 50px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    background: #F4364C;
+    border-radius: 5px;
+    font-size: 18px;
+    color: white;
+    font-weight: normal !important;
+
+}
+
+.btndemo-plataforma-daktico:hover {
+    background: #9A8FB2;
+}
+
+
+.caracteristicas-plataforma-daktico {
+    width: 100%;
+    height: max-content;
+    margin-bottom: 200px;
+
+}
+
+.textcaracteristicas-plataforma-daktico {
+    margin-top: 80px;
+    width: 100%;
+    text-align: center;
+    color: #351F65;
+    font-family: JosefinL;
+    font-size: 24px;
+}
+
+.gridcaracteristicas-plataforma-daktico {
+    margin-top: 50px;
+    display: grid;
+    margin-left: 100px;
+    margin-right: 100px;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.gridcaracteristicas-plataforma-daktico div {
+    font-family: JosefinB;
+    color: #9A8FB2;
+    text-align: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.videocaracteristicas-plataforma-daktico {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    height: 305px;
+}
+
+.videocaracteristicas-plataforma-daktico video {
+
+    width: 640px;
+    border-radius: 16px;
+
+}
+
+.textvideo-plataforma-daktico {
+    position: absolute;
+    margin-top: 415px;
+    width: 400px;
+    height: max-content;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 0px 3px 6px #00000029;
+    font-family: CoreSans;
+    letter-spacing: 0.5px;
+    line-height: 20px;
+}
+
+.textvideo-plataforma-daktico div {
+    padding: 30px;
+}
+
+.grupoimgbg-caracteristicas {
+    overflow: hidden;
+    width: 345px;
+    margin-top: -175px;
+    height: 400px;
+    position: absolute;
+    right: 0px;
+    z-index: -1;
+}
+
+.grupoimgbg-caracteristicas .img1bg-caracteristicas {
+    position: absolute;
+    margin-top: 91px;
+    margin-left: 89px;
+}
+
+.grupoimgbg-caracteristicas .img1bg-caracteristicas img {
+    width: 110px;
+}
+
+.grupoimgbg-caracteristicas .img2bg-caracteristicas {
+    position: absolute;
+    margin-top: 170px;
+    margin-left: 125px;
+}
+
+.grupoimgbg-caracteristicas .img2bg-caracteristicas img {
+    margin-top: -168px;
+    width: 270px;
+}
+
+.grupoimgbg-caracteristicas .img3bg-caracteristicas {
+    position: absolute;
+    margin-top: 162px;
+    margin-left: 245px;
+}
+
+.grupoimgbg-caracteristicas .img3bg-caracteristicas img {}
+
+.grupoimgbg-caracteristicas .img4bg-caracteristicas {
+    position: absolute;
+    margin-top: 154px;
+    margin-left: 204px;
+}
+
+.grupoimgbg-caracteristicas .img4bg-caracteristicas img {}
+
+.cursos-plataforma-daktico {
+    border-top: 6px solid #9A8FB2;
+    height: max-content;
+    width: 100%;
+    margin-top: 50px;
+    background: #F4F4F4;
+    padding-bottom: 70px;
+}
+
+.actividades-plataforma-daktico {
+    height: max-content;
+    width: 100%;
+    background: #fff;
+    padding-bottom: 70px;
+}
+
+.rutas-plataforma-daktico {
+    height: max-content;
+    width: 100%;
+    margin-top: 50px;
+    background: #F4F4F4;
+    padding-bottom: 70px;
+}
+
+.reglas-plataforma-daktico {
+    height: max-content;
+    width: 100%;
+    background: #fff;
+    padding-bottom: 70px;
+}
+
+/* 
+.itemjuegos-plataforma-daktico {
+    width: 100%;
+    height: 400px;
+    margin-top: 100px;
+}
+
+.carditemjuego {
+    height: max-content;
+    width: 300px;
+
+
+}
+
+.imgitemjuego {
+    justify-content: center;
+    display: flex;
+}
+
+.imgitemjuego img {
+
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+
+}
+
+.tituloitemjuego {
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+    color: #351F65;
+    font-family: JosefinB;
+    font-size: 24px;
+
+}
+
+.descitemjuego div {
+    color: #505050;
+    font-family: CoreSans;
+    font-size: 17px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+} */
+
+.herramientas-plataforma-daktico {
+    height: max-content;
+    width: 100%;
+    margin-top: 50px;
+    background: #F4F4F4;
+    padding-bottom: 70px;
+}
+
+.gridherramientas-plataforma-daktico {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.itemgridherramienta {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    margin-top: 100px;
+    height: max-content;
+
+}
+
+.itemgridherramienta img {
+    border-radius: 6px;
+    width: 100%;
+}
+
+.tituloitemherramientas {
+    width: 100%;
+    text-align: left;
+    font-size: 22px;
+    font-family: JosefinB;
+    color: #351F65;
+    margin-top: 15px;
+}
+
+.descitemherramientas {
+    margin-top: 15px;
+    text-align: left;
+    font-family: CoreSans;
+    font-size: 17px;
+    color: #505050;
+}
+
+.Preguntas-plataforma-daktico {
+    width: 100%;
+    height: max-content;
+
+}
+
+.titulopreguntas-plataforma-daktico {
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    font-family: JosefinL;
+    color: #351F65;
+    margin-top: 80px;
+
+}
+
+.gridpreguntas-plataforma-daktico {
+    margin-top: 50px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.item-gridpreguntas {
+    border: 1px solid #DED5F2;
+    border-radius: 8px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+    margin: 20px;
+}
+
+.pregunta-gridpreguntas {
+    margin-top: 20px;
+    font-size: 22px;
+    font-family: JosefinB;
+    color: #351F65;
+}
+
+.respuesta-gridpreguntas {
+    margin-top: 20px;
+    font-size: 17px;
+    font-family: CoreSans;
+    color: #505050;
+}
+
+.btnpreguntas-plataforma-daktico {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+
+.btnpreguntas-plataforma-daktico div {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    height: 50px;
+
+    border-radius: 5px;
+    border: 1px solid #351F65;
+}
+
+.btnpreguntas-plataforma-daktico div span {
+    cursor: pointer;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    background: #fff;
+    border: 1px solid #351F65;
+    border-radius: 6px;
+    font-size: 17px;
+
+
+}
+
+.btnpreguntas-plataforma-daktico div:hover {
+    background: #9A8FB2;
+}
+
+footer {
+    background: #130B24;
+
+    width: 100%;
+}
+
+.gridprincipalfooter-plataforma-daktico {
+
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin-left: 80px;
+    margin-right: 80px;
+    padding-top: 90px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #28174B;
+}
+
+.gridprincipalfooter-plataforma-daktico div {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gridprincipalfooter-plataforma-daktico div div {
+    font-family: JosefinR;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.gridprincipalfooter-plataforma-daktico div div a {
+    text-decoration: none;
+    color: #DED5F2;
+    margin-top: 50px;
+
+
+}
+
+.gridprincipalfooter-plataforma-daktico div div a img {
+    height: 15px;
+    width: 15px;
+
+
+}
+
+.gridprincipalfooter-plataforma-daktico div div a span {
+    padding-left: 10px;
+}
+
+.textfinalfooter-plataforma-daktico {
+    width: 100%;
+    text-align: center;
+    font-family: JosefinR;
+    font-size: 16px;
+    color: #DED5F2;
+    margin-top: 30px;
+
+}
+
+.copyright-plataforma-daktico {
+    width: 100%;
+    text-align: center;
+    font-family: JosefinR;
+    font-size: 13px;
+    color: #9A8FB2;
+    margin-top: 30px;
+    padding-bottom: 15px;
+}
+
+
+/*  */
+@media (max-width: 600px) {
+
+
+    .gridprincipalfooter-plataforma-daktico {
+        grid-template-columns: 100%;
+        justify-content: center;
+    }
+
+    .gridprincipalfooter-plataforma-daktico div {
+        width: max-content;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .imglogo-footer {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .txt-46 {
+        font-size: 28px;
+    }
+
+    .admin-index-daktico {
+        width: 100%;
+        display: block;
+        height: max-content;
+    }
+
+    .admin-index-daktico span {
+        font-size: 9px;
+        margin-right: 10px;
+    }
+
+    .admin-index-daktico div {
+        margin-left: 5px;
+        justify-content: center;
+    }
+
+    .admin-index-daktico div span {
+        margin-left: 0px;
+    }
+
+    .menu-index-daktico {
+        width: 100%;
+        height: max-content;
+        display: block;
+        padding-bottom: 20px;
+    }
+
+    .logo-index-daktico {
+        padding-top: 15px;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+
+    }
+
+    .logo-index-daktico img {
+        width: 150px;
+    }
+
+    .itemsmenu-index-daktico {
+        width: 100%;
+        display: block;
+        justify-content: right;
+    }
+
+    .itemsmenu-index-daktico .items-index {
+        text-align: center;
+        display: block;
+        align-items: center;
+
+    }
+
+    .itemsmenu-index-daktico .items-index div {
+        margin-top: 10px;
+    }
+    .itemsmenu-index-daktico div {
+
+        margin-right: 0px;
+    }
+
+    .itemsmenu-index-daktico div span {
+        font-weight: bold;
+       
+    }
+
+    .btndemo-index-daktico {
+        margin-top: 30px !important;
+        width: 120px;
+        margin-right: auto !important;
+        margin-left: auto !important;
+
+    }
+
+    .btndemo-index-daktico span {
+        width: 120px;
+    }
+
+
+    .gridplataforma-daktico {
+        grid-template-columns: 100%;
+    }
+
+    .item1-plataforma-daktico {
+        margin-top: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .gridfila2-plataforma-daktico {
+        padding-right: 20px;
+    }
+
+    .gridfila3-plataforma-daktico {
+        margin-top: 40px;
+    }
+
+    .videoprincipal-plataforma {
+        width: 90%;
+        margin-top: 20px;
+        margin-right: auto;
+        margin-left: auto;
+
+    }
+
+    .videoprincipal-plataforma img {
+        width: 100%;
+
+    }
+
+    .grupoimgbg-caracteristicas {
+        display: none;
+    }
+
+    /*  */
+
+    .textcaracteristicas-plataforma-daktico {
+        margin-top: 80px;
+        width: 100%;
+        text-align: center;
+        color: #351F65;
+        font-family: JosefinL;
+        font-size: 24px;
+    }
+
+    .gridcaracteristicas-plataforma-daktico {
+
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-columns: 100%;
+    }
+
+    .gridcaracteristicas-plataforma-daktico div {
+        font-family: JosefinB;
+        color: #9A8FB2;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 24px;
+    }
+
+    .videocaracteristicas-plataforma-daktico {
+        width: 100%;
+        margin-top: 20px;
+        height: 305px;
+    }
+
+    .videocaracteristicas-plataforma-daktico video {
+        width: 100%;
+        background-size: cover;
+        object-fit: fill;
+    }
+
+    .textvideo-plataforma-daktico {
+        width: 80%;
+    }
+
+    .textvideo-plataforma-daktico div {
+        padding: 20px;
+    }
+
+
+    .gridherramientas-plataforma-daktico {
+        width: 90%;
+        display: grid;
+        grid-template-columns: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .itemgridherramienta {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        margin-top: 40px;
+        height: max-content;
+
+    }
+
+    .itemgridherramienta img {
+        display: flex;
+
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .tituloitemherramientas {
+
+        text-align: center;
+
+    }
+
+    .descitemherramientas {
+        text-align: justify;
+    }
+
+
+    .Preguntas-plataforma-daktico {
+        height: max-content;
+
+    }
+
+    .titulopreguntas-plataforma-daktico {
+        width: 100%;
+        text-align: center;
+        font-size: 24px;
+        font-family: JosefinL;
+        color: #351F65;
+        margin-top: 80px;
+
+    }
+
+    .gridpreguntas-plataforma-daktico {
+        grid-template-columns: 100%;
+
+    }
+
+    .videocaracteristicas-plataforma-daktico video {
+        width: 100%;
+        background-size: cover;
+        object-fit: fill;
+    }
+
+}
+
+@media (min-width: 500px) and (max-width: 768px) {
+    .gridherramientas-plataforma-daktico {
+
+        grid-template-columns: 50% 50%;
+
+    }
+
+    .itemgridherramienta {
+        width: 90% !important;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 800px) {
+    .imglogo-footer {
+        display: none;
+    }
+
+    .gridprincipalfooter-plataforma-daktico {
+
+        grid-template-columns: 33% 33% 33% !important;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 60px;
+        padding-bottom: 50px;
+        border-bottom: 1px solid #28174B;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+    .txt-46 {
+        font-size: 28px;
+    }
+
+    .gridplataforma-daktico {
+        grid-template-columns: 50% 50%;
+    }
+
+    .item1-plataforma-daktico {
+        margin-top: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .gridfila2-plataforma-daktico {
+        padding-right: 20px;
+    }
+
+    .gridfila3-plataforma-daktico {
+        margin-top: 40px;
+    }
+
+    .videoprincipal-plataforma {
+        width: 90%;
+        margin-top: 20px;
+        margin-right: auto;
+        margin-left: auto;
+
+    }
+
+    .videoprincipal-plataforma img {
+        width: 100%;
+
+    }
+
+    .gridcaracteristicas-plataforma-daktico {
+
+        margin-left: 10px;
+        margin-right: 10px;
+
+    }
+
+    .gridcaracteristicas-plataforma-daktico div {
+        font-size: 18px;
+    }
+
+    .videocaracteristicas-plataforma-daktico video {
+        width: 100%;
+    }
+}

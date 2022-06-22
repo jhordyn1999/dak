@@ -1,0 +1,120 @@
+@font-face {
+    font-family: CoreSans;
+    src: url(../font/Core\ Sans\ M\ 45\ Regular.ttf);
+}
+.owl-carousel .owl-nav button.owl-prev {
+    /* background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%) !important; */
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0 !important;
+    font: inherit;
+    position: absolute;
+    top: 35%;
+    /* left: -22px; */
+
+}
+
+.owl-carousel .owl-nav button.owl-prev span {
+    font-size: 3rem !important;
+    color: #351F65;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0 !important;
+    font: inherit;
+    position: absolute;
+    right: 0px;
+    top: 35%;
+
+}
+
+.owl-carousel .owl-nav button.owl-next span {
+    font-size: 3rem !important;
+    color: #351F65;
+}
+
+/*  */
+
+.itemjuegos-plataforma-daktico {
+    width: 100%;
+    height: 400px;
+
+}
+
+.carditemjuego {
+    height: max-content;
+    width: 270px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+.imgitemjuego {
+    justify-content: center;
+    display: flex;
+}
+
+.imgitemjuego img {
+
+    height: 200px !important;
+    width: 200px !important;
+    border-radius: 50%;
+
+}
+
+.tituloitemjuego {
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+    color: #351F65;
+    font-family: JosefinB;
+    font-size: 24px;
+
+}
+
+.descitemjuego div {
+    margin-top: 20px;
+    color: #505050;
+    font-family: CoreSans;
+    font-size: 17px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+}
+
+@media (min-width: 1000px) {
+    .owl-carousel .owl-nav button.owl-next {
+        position: absolute;
+        right: 5%;
+        bottom: 10px;
+        top: 0% !important;
+
+    }
+
+    .owl-carousel .owl-nav button.owl-next span {
+        font-size: 3rem !important;
+        position: absolute;
+        bottom: 10px;
+        color: #351F65;
+    }
+
+
+    .owl-carousel .owl-nav button.owl-prev {
+        top: 1% !important;
+        right: 10%;
+        bottom: 20px;
+        position: absolute;
+    }
+
+    .owl-carousel .owl-nav button.owl-prev span {
+        font-size: 3rem !important;
+        position: absolute;
+        bottom: 0px;
+        color: #351F65;
+    }
+}

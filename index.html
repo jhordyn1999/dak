@@ -34,10 +34,13 @@
                     <div class="itemsmenu-index-daktico">
                         <div class="items-index">
                             <div> <a href="plataforma.html"> <span>Plataforma</span></a></div>
+                            <div> <a href="#"> <span>Cursos</span></a></div>
                             <div> <a href="casos.html"><span>Casos de éxito</span></a></div>
                             <!-- <div> <a href="#"> <span>Precios</span></a></div>
                             <div> <a href="#"><span>Market</span></a></div> -->
-                            <div class="btndemo-index-daktico Roboto_medium" id="btndemo-menu"><span>Solicita una demo</span></div>
+                            <!-- <div class="btndemo-index-daktico Roboto_medium" id="btndemo-menu"><span>Solicita una
+                                        demo</span></div> -->
+                            <div class="btndemo-index-daktico Roboto_medium" id="btndemo-menu">Prueba Daktico</div>
                         </div>
                     </div>
                 </div>
@@ -52,21 +55,21 @@
 
 
                         <div class="fila1principal-index-daktico">
-                            <h4>VIDEO JUEGO ADMINISTRABLE</h4>
+                            <h4>VIDEOJUEGO ADMINISTRABLE</h4>
                         </div>
                         <div class="fila2principal-index-daktico">
                             <h2> Fortalece las habilidades y competencias de tus trabajadores.</h2>
                         </div>
                         <div class="fila3principal-index-daktico">
                             <h3>
-                                Crea y disfruta de cursos innovadores, interactivos, colaborativos, y desafiantes.
+                                Crea y disfruta de cursos innovadores, colaborativos, y desafiantes.
                             </h3>
                         </div>
                         <div class="fila4principal-index-daktico">
                             <div>
-                                <div class="btndemo-index-daktico Roboto_bold"><span>Solicita una demo</span></div>
-                                <div class="btndemo-index-daktico Roboto_medium" ><span
-                                        style="background: #fff; color: #351F65!important;">Conocer más</span></div>
+                                <div class="btndemo-index-daktico Roboto_medium">Solicita una demo</div>
+                                <div class="btndemo2-index-daktico Roboto_medium">Conocer más</div>
+
                             </div>
                         </div>
                     </div>
@@ -83,7 +86,7 @@
                             z-index: 1;" class="inline-muted" autoplay loop playsinline="">  -->
                             <!-- <source src="frontpage/features/animations/multiplayer.hevc.mp4"
                                     type="video/mp4; codecs=hvc1"> -->
-                           <!-- <source src="video/multiplayer.av1.mp4" type="video/mp4; codecs=av01.0.05M.08"> -->
+                            <!-- <source src="video/multiplayer.av1.mp4" type="video/mp4; codecs=av01.0.05M.08"> -->
                             <!-- <source src="frontpage/features/animations/multiplayer.h264.mp4"
                                     type="video/mp4; codecs=avc1"> -->
                             <!-- </video> -->
@@ -121,25 +124,56 @@
                 </div>
             </div>
         </div>
+        <div class="opinion-index-daktico">
+            <div class="gridopinion-index-daktico">
+                <div>
+                    <div style="width: 100%; display: flex; justify-content: center;">
+                        <img src="img/Grupo 196.svg" alt=""> &nbsp; &nbsp;
+                        <img src="img/Grupo 197.svg" style="padding-top: 50px;" alt="">
+                    </div>
+                </div>
+                <div class="groupopinion-index-daktico">
+                    <div>
+                        <img src="img/gif.png" width="100px" height="100px" style="border-radius: 50%;" alt="">
+                    </div>
+                    <div style="margin-left: 20px;">
+                        <span>
+                            "Nos encantaron los cursos, fueron innovadores y de mucha ayuda para que los trabajadores
+                            logren
+                            sus objetivos."</span>
+                        <div class="nombreopinion">
+                            Jackeline Pimentel
+                        </div>
+                        <div class="cargoopinion">Gestión de aprendizaje - Urbanova</div>
+                        <div class="leermas-index-daktico ">
+                            <span class="Roboto_medium" @click="verCaso(value.id)">Conoce más sobre este caso</span>
 
-        <div class="confian-index-daktico">
-            <div class="textconfian-index-daktico">
-                <div> <span>Ellos confían en nosotros</span></div>
-            </div>
-            <div class="gridconfian-index-daktico">
+                            <img src="img/Trazado 79332.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="groupimgopinion">
+                    <div>
+                        <img class="img1-opinion" src="img/Trazado 79322.svg" alt="">
+                    </div>
+                    <div>
+                        <img class="img2-opinion" src="img/Trazado 79329.svg" alt="">
+                    </div>
+                    <div>
+                        <img class="img3-opinion" src="img/Trazado 79322.svg" alt="">
+                    </div>
 
-                <div><img src="img/logo QROMA.svg" alt=""></div>
-                <div><img src="img/logo TASA.svg" alt=""></div>
-                <div><img src="img/logo Urbanova.svg" alt=""></div>
-                <div><img src="img/Logo MINSUR.svg" alt=""></div>
-                <div><img src="img/logo MARCOBRE.svg" alt=""></div>
-                <div><img src="img/logo Daktico.svg"></div>
-                <div><img src="img/Grupo 199.svg" alt=""></div>
-                <div>8</div>
+                    <div>
+                        <img src="img/Grupo 198.svg" alt="">
+                    </div>
+
+                </div>
             </div>
+
         </div>
-        <div class="bordefinal-index-daktico">
-        </div>
+
+        <!-- <div class="bordefinal-index-daktico">
+        </div> -->
         <div class="caracteristicas-index-daktico">
             <div class="imgestrella-index-daktico">
                 <img src="img/Grupo 191.svg" alt="">
@@ -152,37 +186,47 @@
                     <div class="column1caracteristicas-index-daktico">
                         <div class="itemcolum1caracteristicas" @mouseover="changueCaracteristica('carac1')">
                             <img src="img/Trazado 79333.svg" id="imgflecha1" alt="">
-                            <div id="carac1" class="itemcaracteristicaseleccionado"><span>Divertido y estimulante</span>
+                            <div id="carac1" class="itemcarac itemcaracteristicaseleccionado"><span>Divertido y
+                                    estimulante</span>
                             </div>
 
                         </div>
                         <div class="itemcolum1caracteristicas" @mouseover="changueCaracteristica('carac2')">
                             <img src="img/Trazado 79333.svg" class="nonecarac" id="imgflecha2" alt="">
-                            <div id="carac2"><span>Versátil y modular</span></div>
+                            <div class="itemcarac" id="carac2"><span>Versátil y modular</span></div>
                         </div>
 
                         <div class="itemcolum1caracteristicas" @mouseover="changueCaracteristica('carac3')">
                             <img src="img/Trazado 79333.svg" class="nonecarac" id="imgflecha3" alt="">
-                            <div id="carac3"><span>Personalizable y
+                            <div class="itemcarac" id="carac3"><span>Personalizable y
                                     adaptable</span></div>
                         </div>
                         <div class="itemcolum1caracteristicas" @mouseover="changueCaracteristica('carac4')">
                             <img src="img/Trazado 79333.svg" class="nonecarac" id="imgflecha4" alt="">
-                            <div id="carac4"><span>Inteligente y
+                            <div class="itemcarac" id="carac4"><span>Inteligente y
                                     autogestionable</span></div>
                         </div>
 
-                        <div class="itemcolum1caracteristicas" style="justify-content: center;">
-                            <div class="btndemo-index-daktico txt-white btncaracteristicas Roboto_medium"><span>Solicita una
-                                    demo</span></div>
-                        </div>
+                        <!-- <div class="itemcolum1caracteristicas" style="justify-content: center;">
+                            <div class="btndemo-index-daktico btncaracteristicas Roboto_medium">
+                                Solicita una
+                                demo
+                            </div>
+                        </div> -->
 
                     </div>
 
                     <div class="column2caracteristicas-index-daktico">
                         <div class="divimg-caracteristicas" style="z-index: 1;">
                             <div id="divcarac1">
-                                <img src="img/gif.png" class="imggif-index-daktico" alt="">
+                                <img src="img/gif.png" class="imggif-index-daktico" alt=""> <br> <br>
+                                <div class="cajabtn">
+                                    <div class="btndemo-index-daktico btncaracteristicas Roboto_medium">
+                                        Solicita una
+                                        demo
+                                    </div>
+                                </div>
+
                                 <!-- <div class="descimg-caracteristicas-index-daktico">Divertido Lorem ipsum dolor sit, amet
                                     consectetur
                                     adipisicing elit. Repellendus sapiente laboriosam
@@ -190,7 +234,13 @@
                                     consequatur corrupti fugit. Magni veritatis fugiat </div> -->
                             </div>
                             <div id="divcarac2" class="nonecarac">
-                                <img src="img/gif.png" class="imggif-index-daktico" alt="">
+                                <img src="img/gif.png" class="imggif-index-daktico" alt=""><br> <br>
+                                <div class="cajabtn">
+                                    <div class="btndemo-index-daktico btncaracteristicas Roboto_medium">
+                                        Solicita una
+                                        demo
+                                    </div>
+                                </div>
                                 <!-- <div class="descimg-caracteristicas-index-daktico">Versatil Lorem ipsum dolor sit, amet
                                     consectetur
                                     adipisicing elit. Repellendus sapiente laboriosam
@@ -198,7 +248,13 @@
                                     consequatur corrupti fugit. Magni veritatis fugiat </div> -->
                             </div>
                             <div id="divcarac3" class="nonecarac">
-                                <img src="img/gif.png" class="imggif-index-daktico" alt="">
+                                <img src="img/gif.png" class="imggif-index-daktico" alt=""><br> <br>
+                                <div class="cajabtn">
+                                    <div class="btndemo-index-daktico btncaracteristicas Roboto_medium">
+                                        Solicita una
+                                        demo
+                                    </div>
+                                </div>
                                 <!-- <div class="descimg-caracteristicas-index-daktico">Personalizable Lorem ipsum dolor sit,
                                     amet consectetur
                                     adipisicing elit. Repellendus sapiente laboriosam
@@ -206,7 +262,13 @@
                                     consequatur corrupti fugit. Magni veritatis fugiat </div> -->
                             </div>
                             <div id="divcarac4" class="nonecarac">
-                                <img src="img/gif.png" class="imggif-index-daktico" alt="">
+                                <img src="img/gif.png" class="imggif-index-daktico" alt=""><br> <br>
+                                <div class="cajabtn">
+                                    <div class="btndemo-index-daktico btncaracteristicas Roboto_medium">
+                                        Solicita una
+                                        demo
+                                    </div>
+                                </div>
                                 <!-- <div class="descimg-caracteristicas-index-daktico">Inteligente Lorem ipsum dolor sit, amet
                                     consectetur
                                     adipisicing elit. Repellendus sapiente laboriosam
@@ -231,8 +293,21 @@
             </div>
 
         </div>
+        <div class="confian-index-daktico">
+            <div class="textconfian-index-daktico">
+                <div> <span> Confían en nosotros</span></div>
+            </div>
+            <div class="gridconfian-index-daktico">
 
-        <div class="opinan-index-daktico">
+                <div><img class="imgplomo" src="img/logo QROMA.svg" alt=""></div>
+                <div><img class="imgplomo" src="img/logo TASA.svg" alt=""></div>
+                <div><img class="imgplomo" src="img/logo Urbanova.svg" alt=""></div>
+                <div><img class="imgplomo" src="img/Logo MINSUR.svg" alt=""></div>
+                <div><img class="imgplomo" src="img/logo MARCOBRE.svg" alt=""></div>
+
+            </div>
+        </div>
+        <!-- <div class="opinan-index-daktico">
             <div style="width: 100%; display: flex; justify-content: center;">
                 <img src="img/Grupo 196.svg" alt=""> &nbsp; &nbsp;
                 <img src="img/Grupo 197.svg" style="padding-top: 15px;" alt="">
@@ -245,60 +320,83 @@
 
                 <div class="gridopinan-index-daktico">
 
-
-
-                    <div v-for="(lstopinan, index) in listado_opinan" :key="index">
-                        <div class="cardopinan-index-daktico">
-                            <div class="cuerpo-cardopinan">
-                                <div @onload="caracterOpinan(index)" :id="'textopinan'+index">
-                                    {{lstopinan.textoprincipal}}
-                                </div>
-                              
-                                <span :id="'points'+index">...</span>
-                                <div :id="'textopinanoculto'+index" class="opinannone">
-                                    {{lstopinan.textooculto}}
-
-                                </div>
-                                <div class="leermas-index-daktico Roboto_medium" @click="toggleOpinan(index)"><span
-                                        :id="'btnleermasopinan'+index">Leer más</span><img src="img/Trazado 79332.svg"
-                                        alt="">
-                                </div>
-
-                            </div>
-                        </div>
+                    <div v-for="(value, index) in listado_opinan" :key="index">
+                        <carta-opinion class="cardopinan-index-daktico" :value="value" :num_caracteres="num_caracteres">
+                        </carta-opinion>
                         <div class="gridautor-index-daktico">
                             <div class="cardautor-index-daktico">
-                                <img :src="lstopinan.logo" alt=""> <br>
-                                <div class="bold" style="font-size: 21px;"><span>{{lstopinan.nombre}}</span></div>
-                                <div style="color: #666666; font-size: 16px;"><span>{{lstopinan.empresa}}</span>
+                                <img :src="value.logo" alt=""> <br>
+                                <div class="bold" style="font-size: 21px;"><span>{{value.nombre}}</span></div>
+                                <div style="color: #666666; font-size: 16px;"><span>{{value.empresa}}</span>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
+                    </div>
 
 
                 </div>
-
-                <!-- <div class="gridautor-index-daktico">
-                    <div class="cardautor-index-daktico">
-                        <img src="img/logo-daktico.PNG" alt=""> <br>
-                        <div class="bold" style="font-size: 21px;"><span>Detective Marciano</span></div>
-                        <div style="color: #666666; font-size: 16px;"><span>Justice League Strategy Head</span></div>
-                    </div>
-                    <div class="cardautor-index-daktico">
-                        <img src="img/logo-daktico.PNG" alt=""> <br>
-                        <div class="bold" style="font-size: 21px;"><span>Luke Skywalker</span></div>
-                        <div style="color: #666666; font-size: 16px;"><span>The Real Last Jedi</span></div>
-                    </div>
-                    <div class="cardautor-index-daktico">
-                        <img src="img/logo-daktico.PNG" alt=""> <br>
-                        <div class="bold" style="font-size: 21px;"><span>Austin Powers</span></div>
-                        <div style="color: #666666; font-size: 16px;"><span>Goldmember Captor</span></div>
-                    </div>
-                </div> -->
             </fieldset>
 
+        </div> -->
+        <div class="opinion-index-daktico">
+            <div class="gridopinion-index-daktico">
+                <div>
+                    <div style="width: 100%; display: flex; justify-content: center;">
+                        <img src="img/Grupo 196.svg" alt=""> &nbsp; &nbsp;
+                        <img src="img/Grupo 197.svg" style="padding-top: 50px;" alt="">
+                    </div>
+                </div>
+                <div class="groupopinion-index-daktico">
+                    <div>
+                        <img src="img/gif.png" width="100px" height="100px" style="border-radius: 50%;" alt="">
+                    </div>
+                    <div style="margin-left: 20px;">
+                        <span>
+                            "Nos encantaron los cursos, fueron innovadores y de mucha ayuda para que los trabajadores
+                            logren
+                            sus objetivos."</span>
+                        <div class="nombreopinion">
+                            Jackeline Pimentel
+                        </div>
+                        <div class="cargoopinion">Gestión de aprendizaje - Urbanova</div>
+                        <div class="leermas-index-daktico ">
+                            <span class="Roboto_medium" @click="verCaso(value.id)">Conoce más sobre este caso</span>
+
+                            <img src="img/Trazado 79332.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="groupimgopinion">
+                    <div>
+                        <img class="img1-opinion" src="img/Trazado 79322.svg" alt="">
+                    </div>
+                    <div>
+                        <img class="img2-opinion" src="img/Trazado 79329.svg" alt="">
+                    </div>
+                    <div>
+                        <img class="img3-opinion" src="img/Trazado 79322.svg" alt="">
+                    </div>
+
+                    <div>
+                        <img src="img/Grupo 198.svg" alt="">
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="banerdiseñamos">
+            <div class="griddiseñamos">
+                <div class="text-diseñamos">Hacemos de tus cursos una experiencia emocionante</div>
+                <div class="btndiseñamos" >
+                    
+                        <div > ¿Diseñamos tu curso?</div>
+                  
+                    <p>Conoce más sobre nuestra metodología.</v-pre>
+                   
+                </div>
+            </div>
         </div>
         <footer>
             <div class="gridprincipalfooter-index-daktico">
@@ -328,7 +426,8 @@
                 <span>Av. Benavides 1944 Miraflores, Lima, Lima, Perú - Cel..: +511 990 065 725</span>
             </div>
 
-            <div class="copyright-index-daktico"><span>Copyright © 2022, Daktico Todos los derechos reservados.</span>
+            <div class="copyright-index-daktico"><span>Copyright © 2022, Daktico Todos los derechos
+                    reservados.</span>
             </div>
 
 
@@ -336,244 +435,11 @@
 
     </div>
 
-    <!-- ingles -->
-    <!-- <div id="app" style="display: none;">
-        <div class="contenedorprincipal-index-daktico">
-            <div class="headerprincipal-index-daktico">
-                <div class="admin-index-daktico">
-                    <div>
-                        <span>Contact sales</span>
-                        <span>Support</span>
-                        <span>Check in</span>
-                        <div>
-                            <img src="img/icon/user.svg" height="17px" width="17px" alt="">
-                            <span>Get into</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="menu-index-daktico">
-                    <div class="logo-index-daktico">
-                        <a href="#">
-                            <img src="img/logo-daktico.PNG" height="35px" width="100%" alt=""></a>
-                    </div>
-                    <div class="itemsmenu-index-daktico">
-                        <div class="items-index">
-                            <div> <a href="plataforma.html"> <span>Platform</span></a></div>
-                            <div> <a href="casos.html"><span>Success stories</span></a></div>
-                            <div> <a href="#"> <span>Prices</span></a></div>
-                            <div> <a href="#"><span>Market</span></a></div>
-                            <div class="btndemo-index-daktico"><span>Request a demo</span></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="blodyprincipal-index-daktico">
-                <div class="gridprincipal-index-daktico">
-                    <div style="width: 100%;">
-                        <div class="fila1principal-index-daktico"><span>COURSES MADE GAMES</span></div>
-                        <div class="fila2principal-index-daktico">
-                            <span>Lorem ipsum pain sit amet consectetur adipisicing elit. Ducimus </span>
-                        </div>
-                        <div class="fila3principal-index-daktico">
-                            <span>
-                                it has survived not only five centuries, but also the leap into electronic typesetting,
-                                remaining essentially unchanged.
-                            </span>
-                        </div>
-                        <div class="fila4principal-index-daktico">
-                            <div>
-                                <div class="btndemo-index-daktico"><span>Request a demo</span></div>
-                                <div class="btndemo-index-daktico" style="color: #351F65!important; "><span
-                                        style="background: #fff;">learn more</span></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item2principal-index-daktico"><img src="img/simbolo-daktico.png" alt=""></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="confian-index-daktico">
-            <div class="textconfian-index-daktico">
-                <div> <span>They trust us</span></div>
-            </div>
-            <div class="gridconfian-index-daktico">
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
-                <div>4</div>
-                <div>5</div>
-                <div>6</div>
-                <div>7</div>
-                <div>8</div>
-            </div>
-        </div>
-        <div class="bordefinal-index-daktico">
-        </div>
-        <div class="caracteristicas-index-daktico">
-            <div class="imgestrella-index-daktico">
-                <img src="img/estrella-tres.png" alt="">
-            </div>
-            <div class="textcaracteristicas-index-daktico">
-                <div><span>Main features</span></div>
-            </div>
-            <div class="bodycaracteristicas-index-daktico">
-                <div class="gridcaracteristicas-index-daktico">
-                    <div class="column1caracteristicas-index-daktico">
-                        <div id="carac1" @click="changueCaracteristica('carac1')"
-                            class="itemcaracteristicaseleccionado"><span>fun and stimulating</span></div>
-                        <div id="carac2" @click="changueCaracteristica('carac2')"><span>Versatile and modular</span>
-                        </div>
-                        <div id="carac3" @click="changueCaracteristica('carac3')"><span>Customizable and
-                                adaptable</span></div>
-                        <div id="carac4" @click="changueCaracteristica('carac4')"><span>Smart and self-manageable</span>
-                        </div>
-                        <div>
-                            <div class="btndemo-index-daktico txt-white btncaracteristicas"><span>Request a demo</span>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="column2caracteristicas-index-daktico">
-                        <div id="divcarac1">
-                            <img src="img/gif.png" class="imggif-index-daktico" alt="">
-                            <div class="descimg-caracteristicas-index-daktico">
-                                Funny Lorem ipsum pain sit, amet consectetur adipisicing elit. Repellendus sapiente
-                                laboriosam iusto soluta rerum dicta dignissimos, id sed ipsa consequatur corrupti fugit.
-                                Magni veritatis fugiat </div>
-                        </div>
-                        <div id="divcarac2" class="nonecarac">
-                            <img src="img/gif.png" class="imggif-index-daktico" alt="">
-                            <div class="descimg-caracteristicas-index-daktico">Versatile Lorem ipsum pain sit, amet
-                                consectetur adipisicing elit. Repellendus sapiente laboriosam iusto soluta rerum dicta
-                                dignissimos, id sed ipsa consequatur corrupti fugit. Magni veritatis fugiat </div>
-                        </div>
-                        <div id="divcarac3" class="nonecarac">
-                            <img src="img/gif.png" class="imggif-index-daktico" alt="">
-                            <div class="descimg-caracteristicas-index-daktico">Customizable Lorem ipsum pain sit, amet
-                                consectetur adipisicing elit. Repellendus sapiente laboriosam iusto soluta rerum dicta
-                                dignissimos, id sed ipsa consequatur corrupti fugit. Magni veritatis fugiat </div>
-                        </div>
-                        <div id="divcarac4" class="nonecarac">
-                            <img src="img/gif.png" class="imggif-index-daktico" alt="">
-                            <div class="descimg-caracteristicas-index-daktico">Intelligent Lorem ipsum pain sit, amet
-                                consectetur adipisicing elit. Repellendus sapiente laboriosam iusto soluta rerum dicta
-                                dignissimos, id sed ipsa consequatur corrupti fugit. Magni veritatis fugiat </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="opinan-index-daktico">
-            <div style="width: 100%; display: flex; justify-content: center;">
-                <img src="img/comilla-a.PNG" alt=""> &nbsp; &nbsp;
-                <img src="img/comilla-c.PNG" style="padding-top: 15px;" alt="">
-            </div>
-
-
-            <fieldset>
-                <legend class="textopinan-index-daktico"><span>What our customers say</span></legend>
-
-
-                <div class="gridopinan-index-daktico">
-                    <div>
-                        <div class="cardopinan-index-daktico">
-                            <div class="cuerpo-cardopinan">Lorem Ipsum is simply dummy text of the printing and
-                                typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since
-                                the 1500s, when an unknown printer took a galley of type.</div>
-                            <div class="leermas-index-daktico"><span>Read more</span><img src="" alt=""></div>
-                        </div>
-                        <div class="gridautor-index-daktico">
-                            <div class="cardautor-index-daktico">
-                                <img src="img/logo-daktico.PNG" alt=""> <br>
-                                <div class="bold" style="font-size: 21px;"><span>Martian Manhunter</span></div>
-                                <div style="color: #666666; font-size: 16px;"><span>Justice League Strategy Head</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div class="cardopinan-index-daktico">
-                            <div class="cuerpo-cardopinan">Lorem Ipsum is simply dummy text of the printing and
-                                typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since
-                                the 1500s, when an unknown printer took a galley of type.</div>
-                            <div class="leermas-index-daktico"><span>Read more</span><img src="" alt=""></div>
-                        </div>
-                        <div class="gridautor-index-daktico">
-                            <div class="cardautor-index-daktico">
-                                <img src="img/logo-daktico.PNG" alt=""> <br>
-                                <div class="bold" style="font-size: 21px;"><span>Luke Skywalker</span></div>
-                                <div style="color: #666666; font-size: 16px;"><span>The Real Last Jedi</span></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="cardopinan-index-daktico">
-                            <div class="cuerpo-cardopinan">Lorem Ipsum is simply dummy text of the printing and
-                                typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since
-                                the 1500s, when an unknown printer took a galley of type.</div>
-                            <div class="leermas-index-daktico"><span>Read more</span><img src="" alt=""></div>
-                        </div>
-                        <div class="gridautor-index-daktico">
-
-                            <div class="cardautor-index-daktico">
-                                <img src="img/logo-daktico.PNG" alt=""> <br>
-                                <div class="bold" style="font-size: 21px;"><span>Austin Powers</span></div>
-                                <div style="color: #666666; font-size: 16px;"><span>Goldmember Captor</span></div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </fieldset>
-
-        </div>
-        <footer>
-            <div class="gridprincipalfooter-index-daktico">
-                <div class="imglogo-footer"> <img src="img/logo-daktico.PNG" alt=""></div>
-                <div>
-                    <div><a href="">Blog</a> </div>
-                    <div><a href="">Create courses</a></div>
-                    <div><a href="">Request advice</a></div>
-                    <div><a href="">Play now</a></div>
-                    <div><a href="">About the platform</a></div>
-                </div>
-                <div>
-                    <div><a href="">contact us</a></div>
-                    <div><a href="">request a demo</a></div>
-                    <div><a href="">Business</a></div>
-                    <div><a href="">Terms and Conditions</a></div>
-                    <div><a href="">Policies and Privacy</a></div>
-                </div>
-                <div>
-                    <div><a href=""><img src="img/icon/facebook-icon.svg" alt=""> <span>Facebook</span></a> </div>
-                    <div><a href=""><img src="img/icon/instagram-icon.svg" alt=""> <span>Instagram</span></a> </div>
-                    <div><a href=""><img src="img/icon/linkedln-icon.svg" alt=""> <span>Linkedln</span></a> </div>
-                </div>
-
-            </div>
-            <div class="textfinalfooter-index-daktico">
-                <span>Av Benavides 1944 Miraflores, Lima - Phone: 01 571 6456</span>
-            </div>
-
-            <div class="copyright-index-daktico"><span>Copyright © 2022, Daktico All rights reserved.</span>
-            </div>
-
-
-        </footer>
-
-    </div> -->
-
 </body>
 <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="js/index.js"></script>
+
 <div></div>
 
 </html>

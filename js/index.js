@@ -1,68 +1,139 @@
+// Vue.component("carta-opinion", {
+//     props: ["value", "num_caracteres"],
+//     data() {
+//         return {
+//             showMore: false,
+//         }
+//     },methods: {
+//         verCaso(id){
+//          //   console.log('pagina.php?Variable='+id+'')
+//             window.location.href = 'casos.html?clt='+id+''
+//          },
+//     },
+
+    
+//     template: 
+    
+    
+//             `
+//         <div class="cardopinan-index-daktico">
+//             <div class="cuerpo-cardopinan">
+//                 <p v-if="!showMore">{{ value.textoprincipal.substring(0, num_caracteres) }} 
+//                     <span v-if="value.textoprincipal.length > num_caracteres && !showMore">...</span>
+//                 </p>
+//                 <p v-if="showMore">{{ value.textoprincipal }}</p>
+
+//                 <div class="leermas-index-daktico Roboto_medium">
+//                     <span v-if="!showMore && value.textoprincipal.length !== num_caracteres" @click="showMore = true">Leer más</span>
+//                     <span v-if="showMore && value.textoprincipal.length !== num_caracteres" @click="showMore = false">Leer menos</span>
+//                     <img v-if="value.textoprincipal.length > num_caracteres || value.textoprincipal.length < num_caracteres"
+//                         src="img/Trazado 79332.svg" alt="">
+//                 </div>
+//                 <div class="btnMasInformacion" @click="verCaso(value.id)"><span>Más información</span></div>
+//             </div>
+//         </div>
+//         `
+// });
+
+Vue.component("carta-opinion", {
+    props: ["value", "num_caracteres"],
+    data() {
+        return {
+            showMore: false,
+        }
+    },methods: {
+        verCaso(id){
+         //   console.log('pagina.php?Variable='+id+'')
+            window.location.href = 'casos.html?clt='+id+''
+         },
+    },  
+    template: 
+
+            `
+        <div class="cardopinan-index-daktico">
+            <div class="cuerpo-cardopinan">
+            <p v-if="!showMore">{{ value.textoprincipal.substring(0, num_caracteres) }} </p>
+        <div class="leermas-index-daktico Roboto_medium">
+                               <span  @click="verCaso(value.id)">Conoce más sobre este caso</span>
+                            
+                               <img  src="img/Trazado 79332.svg" alt="">
+                           </div>
+            </div>
+        </div>
+        `
+});
 var app = new Vue({
     el: "#app",
     data: {
-        listado_opinanfinal:[{text1:"", text2:""}],
+        num_caracteres: 95,
+        listado_opinanfinal: [],
         listado_opinan: [{
+            id: 1,
             textoprincipal: "En el siguiente ejemplo, recuperamos la posición de la subcadena SQLSHACK.COM usando CHARINDEX.",
-            textooculto: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when  an unknown printer took a galley of type.",
             logo: "../img/logo Urbanova.svg", nombre: "Jackeline Pimentel", empresa: "Urbnova"
         },
         {
+            id: 2,
             textoprincipal: "Lorem Ipsum s is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when  an unknown printer took a galley of type.",
-            textooculto: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when  an unknown printer took a galley of type.",
             logo: "../img/logo TASA.svg", nombre: "Angela Gallardo", empresa: "TASA"
         },
         {
+            id: 3,
             textoprincipal: "En este argumento, especificamos la expresión de carácter que queremos buscar en la cadena especificada. Podríamos incluir los caracteres salvajes también en este argumento",
-            textooculto: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when  an unknown printer took a galley of type.",
             logo: "../img/logo MARCOBRE.svg", nombre: "Fiorella Urbina", empresa: "Marcobre"
         },
 
         ]
     }, created() {
-        this.caracterOpinan();
-    },
+
+    }, mounted() {
+        // this.caracterOpinan();
+    }
+
+    ,
 
 
     methods: {
+        // caracterOpinan() {
+        //     var registros = this.listado_opinan;
+        //     nvacio = [];
+        //     for (let index = 0; index < registros.length; index++) {
+        //          console.log(registros[index].textoprincipal.length)
+        //         var id = registros[index].id;
+        //         var text1 = registros[index].textoprincipal.substring(0, 95);
+        //         var text2 = registros[index].textoprincipal.substring(95, 10000000);
+        //         var img = registros[index].logo;
+        //         var nom = registros[index].nombre;
+        //         var emp = registros[index].empresa;
+        //         this.listado_opinanfinal.push({ id: id, textoprincipal: text1, textooculto: text2, logo: img, nombre: nom, empresa: emp })
 
-        caracterOpinan() {
+        //         if (text2.length == 0) {
+        //             nvacio.push({ item: id });
+        //             console.log()
+        //         }
+        //          console.log(this.listado_opinanfinal);
+        //     }
 
-            // const cuerpoDelDocumento = document.body;
-            // cuerpoDelDocumento.onload = miFuncion;
+        //     for (let index = 0; index < nvacio.length; index++) {
+        //         var id = nvacio[index].item;
+        //         console.log(id)
+        //         this.btnLeerNone(id);
+        //     }
 
-            // function miFuncion() {
-            //     alert('La página terminó de cargar');
-            // }
-            // console.log("entró")
-            // const texto = document.getElementById("textopinan" + index);
-            //  console.log("El tamaño del párrafo es de " + texto.length + " caracteres");
-            // console.log("este es el texto: ",texto)
+        // },
 
-            // var registros = [{ sucursal: 1, idusers: 1, usuario: 'schw' }
-            //     , { sucursal: 1, idusers: 2, usuario: 'schw2' }];
-            var registros = this.listado_opinan;
+        // btnLeerNone(id) {
+        //     var points = document.getElementById("points" + id);
+        //     var btnopinan = document.getElementById("btnleermasopinan" + id);
+        //     console.log(points, btnopinan)
+        //     points.style.display = "none";
+        //     btnopinan.style.display = "none";
 
-            nregistros = [];
-            for (let index = 0; index < registros.length; index++) {
-                // nregistros.push(registros[index].textoprincipal);
-                nregistros.push({ text: registros[index].textoprincipal });
-                console.log(registros[index].textoprincipal.length)
-              //  console.log(registros[index].textoprincipal.substring(0, 95));
-                console.log(registros[index].textoprincipal.substring(95, 10000000));
-                console.log(nregistros);
-            }
-            //             for (i in registros)
-            //                 nregistros.push(registros[i].textoprincipal);
-
-
-            // console.log(registros[i].textoprincipal.length)
-            //             console.log(nregistros);
-        },
-        toggleOpinan(index) {
-            const textoculto = document.getElementById("textopinanoculto" + index)
-            const btnopinan = document.getElementById("btnleermasopinan" + index)
-            const points = document.getElementById("points" + index)
+        // },
+        toggleOpinan(id) {
+            const textoculto = document.getElementById("textopinanoculto" + id)
+            const btnopinan = document.getElementById("btnleermasopinan" + id)
+            const points = document.getElementById("points" + id)
 
             if (points.style.display === "none") {
                 textoculto.style.display = "none";
@@ -147,8 +218,10 @@ var app = new Vue({
             imgflecha2.classList.add("nonecarac")
             imgflecha3.classList.add("nonecarac")
             imgflecha4.classList.add("nonecarac")
-        }
+        },
+        
 
 
     },
+
 });

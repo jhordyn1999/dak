@@ -31,6 +31,7 @@
                 <div class="itemsmenu-index-daktico">
                     <div class="items-index">
                         <div> <a href="plataforma.html"> <span>Plataforma</span></a></div>
+                        <div> <a href="#"> <span>Cursos</span></a></div>
                         <div> <a href="#">Casos de éxito <span class="linea"></span></a></div>
                         <!-- <div> <a href="#"> <span>Precios</span></a></div>
                         <div> <a href="#"><span>Market</span></a></div> -->
@@ -43,7 +44,7 @@
             <div><span>Lorem Ipsum is <span class="subr-casos"> simply dummy </span>text of the printing</span></div>
         </div>
         <div class="gridprincipal-casos-daktico">
-            <div class="gridcliente-casos-daktico">
+            <!-- <div class="gridcliente-casos-daktico">
                 <div class="imgprincipal-caso"> <img src="img/gif.png" alt=""></div>
                 <div class="cuerpotext-caso">
                     <div class="Ncliente-casos"><span>Cliente 1</span></div>
@@ -54,43 +55,37 @@
                             electronic typesetting,
                             remaining essentially unchanged.</span></div>
 
-                    <div class="btnmostrarmas-casos"  > <span >Mostrar más</span> <span
+                    <div class="btnmostrarmas-casos" @click="mostrarMas(1)"  > <span >Mostrar más</span> <span
                             style="margin-left: 7px;">▼</span>
                     </div>
                 </div>
 
-            </div>
+            </div> -->
 
-            <div class="gridcliente-casos-daktico">
-                <div class="imgprincipal-caso"> <img src="img/gif.png" alt=""> <br> <br>
+            <div class="gridcliente-casos-daktico" :id="lstcaso.idopinan" v-for="(lstcaso, index) in listado_caso" :key="index">
+                <div class="imgprincipal-caso"> <img :src="lstcaso.imgprincipal" alt=""> <br> <br>
                     <!-- despues de click mostrar mas -->
-                    <div class="nonediv" id="divimagen">
+                    <div class="nonediv" :id="'divimagen'+lstcaso.idopinan">
                         <div class="gridoculto-left-casos">
-                            <div class="textoculto-left-casos"><span>Lorem Ipsum is simply dummy text of the printing
-                                    and
-                                    typesetting industry.</span>
+                            <div class="textoculto-left-casos"><span>{{lstcaso.desc1}}</span>
                             </div>
-                            <div class="imgoculto-left-casos"><img src="img/gif.png" alt="">
+                            <div class="imgoculto-left-casos"><img :src="lstcaso.imgsec1" alt="">
                             <img class="img-expandir" src="img/icon/icon-expansible.svg" alt=""></div>
 
 
                         </div>
                         <div class="gridoculto-left-casos">
-                            <div class="textoculto-left-casos"><span>Lorem Ipsum is simply dummy text of the printing
-                                    and
-                                    typesetting industry.</span>
+                            <div class="textoculto-left-casos"><span>{{lstcaso.desc2}}</span>
                             </div>
-                            <div class="imgoculto-left-casos"><img src="img/gif.png" alt="">
+                            <div class="imgoculto-left-casos"><img :src="lstcaso.imgsec2" alt="">
                                 <img class="img-expandir" src="img/icon/icon-expansible.svg" alt=""></div>
 
 
                         </div>
                         <div class="gridoculto-left-casos">
-                            <div class="textoculto-left-casos"><span>Lorem Ipsum is simply dummy text of the printing
-                                    and
-                                    typesetting industry.</span>
+                            <div class="textoculto-left-casos"><span>{{lstcaso.desc3}}</span>
                             </div>
-                            <div class="imgoculto-left-casos"><img src="img/gif.png" alt="">
+                            <div class="imgoculto-left-casos"><img :src="lstcaso.imgsec3" alt="">
                                 <img class="img-expandir" src="img/icon/icon-expansible.svg" alt=""></div>
 
 
@@ -99,37 +94,23 @@
                     <!--  -->
                 </div>
                 <div class="cuerpotext-caso">
-                    <div class="Ncliente-casos"><span>Cliente 2</span></div>
-                    <div class="nombrecliente-casos"><span>Nombre del contacto</span></div>
-                    <div class="cargocliente-casos"><span>Jefe de RRHH Qroma Latam</span></div>
+                    <div class="Ncliente-casos"><span>Cliente {{index+1}}</span></div>
+                    <div class="nombrecliente-casos"><span>{{lstcaso.nombre}}</span></div>
+                    <div class="cargocliente-casos"><span>{{lstcaso.cargo}}</span></div>
 
-                    <div class="desc-casos"><span>It has survived not only five centuries, but also the leap into
-                            electronic typesetting,
-                            remaining essentially unchanged.</span></div>
+                    <div class="desc-casos"><span>{{lstcaso.desprincipal}}</span></div>
 
-                    <div class="btnmostrarmas-casos" id="btnMas" @click="mostrarMas()"> <span>Mostrar más</span> <span style="margin-left: 7px;">▼</span>
+                    <div class="btnmostrarmas-casos" :id="'btnMas'+lstcaso.idopinan" @click="mostrarMas(lstcaso.idopinan)"> <span>Mostrar más</span> <span style="margin-left: 7px;">▼</span>
                     </div>
-                    <div class="gridoculto-right-casos nonediv" id="divdescripcion">
-                        <div><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown
-                                printer took a galley of type and scrambled it to make a type specimen book. </span>
+                    <div class="gridoculto-right-casos nonediv" :id="'divdescripcion'+lstcaso.idopinan">
+                        <div><span>{{lstcaso.desprinsec1}}</span>
                         </div>
-                        <div><span>It has
-                                survived not only five centuries, but also the leap into electronic typesetting,
-                                remaining essentially unchanged. It was popularised in the 1960s with the release of
-                                Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                                publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span></div>
-                        <div><span> It is a long
-                                established fact that a reader will be distracted by the readable content of a page when
-                                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
-                                normal distribution of letters, as opposed to using ‘Content here, content here’, making
-                                it look like readable English.</span></div>
-                        <div><span>Many desktop publishing packages and web page editors now
-                                use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover
-                                many web sites still in their infancy.</span></div>
+                        <div><span>{{lstcaso.desprinsec2}}</span></div>
+                        <div><span> {{lstcaso.desprinsec3}}</span></div>
+                        <div><span>{{lstcaso.desprinsec4}}</span></div>
 
                     </div>
-                    <div class="btnmostrarmas-casos nonediv" id="btnMenos" @click="mostrarMenos()"> <span>Mostrar
+                    <div class="btnmostrarmas-casos nonediv" :id="'btnMenos'+lstcaso.idopinan" @click="mostrarMenos(lstcaso.idopinan)"> <span>Mostrar
                             menos</span> <span style="margin-left: 7px;">▲</span>
                     </div>
                 </div>

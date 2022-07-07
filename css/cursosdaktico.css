@@ -27,25 +27,13 @@
     font-family: CoreSans;
     src: url(../font/Core\ Sans\ M\ 45\ Regular.ttf);
 }
-
-@font-face {
-    font-family: JosefinBI;
-    src: url(../font/JosefinSans-BoldItalic.ttf);
-}
-
 @font-face {
     font-family: RobotoB;
     src: url(../font/Roboto-Bold.ttf);
 }
-
 @font-face {
     font-family: RobotoM;
     src: url(../font/Roboto-Medium.ttf);
-}
-
-@font-face {
-    font-family: RobotoR;
-    src: url(../font/Roboto-Regular.ttf);
 }
 
 html, body {
@@ -53,7 +41,19 @@ html, body {
     width: 100%;
     margin: 0;
     font-family: Gotham;
+    
+}
 
+.mtop-0 {
+    margin-top: 0px !important;
+}
+
+.txt-46 {
+    font-size: 46px;
+}
+
+.txt-24 {
+    font-size: 24px;
 }
 
 a {
@@ -61,22 +61,12 @@ a {
     color: snow;
 }
 
-.Roboto_medium {
+.Roboto_medium{
     font-family: RobotoM;
 }
-
-.Roboto_regular {
-    font-family: RobotoR;
-}
-
-.Roboto_bold {
+.Roboto_bold{
     font-family: RobotoB;
 }
-
-.nonediv {
-    display: none !important;
-}
-
 
 .linea {
     background: #F21170;
@@ -162,23 +152,19 @@ a {
     display: flex;
     align-items: center;
 }
-
-.items-index div {
+.items-index div{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 .itemsmenu-index-daktico div a {
 
     font-weight: bold;
     margin-right: 50px;
 }
-
-#btndemo-menu {
+#btndemo-menu{
     margin-right: 50px;
 }
-
 .btndemo-index-daktico {
     width: 150px;
     height: 40px;
@@ -220,158 +206,117 @@ a {
     transform: scale(1, 1) rotate(0deg);
 }
 
-.titulo-casos-daktico {
+.caracteristicas-plataforma-daktico {
+    padding-top: 120px;
     width: 100%;
-    padding-top: 170px;
+    height: max-content;
+    margin-bottom: 200px;
+
+}
+
+.textcaracteristicas-plataforma-daktico {
+    margin-top: 80px;
+    width: 100%;
     text-align: center;
-    color: #222222;
-    font-size: 46px;
-    font-family: JosefinSB;
-
-}
-
-.titulo-casos-daktico div {
-    padding-left: 332px;
-    padding-right: 332px;
-}
-
-.subr-casos {
-    font-family: JosefinBI !important;
-    text-decoration: underline;
-}
-
-body {
-    background: #F4F4F4;
-}
-
-.gridprincipal-casos-daktico {
-    display: grid;
-    grid-template-columns: auto;
-    margin-top: 50px;
-
-}
-
-.gridcliente-casos-daktico {
-    width: 80%;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    margin-bottom: 50px;
-    margin-left: auto;
-    margin-right: auto;
-
-}
-
-.imgprincipal-caso {
-
-    justify-content: center;
-    width: 100%;
-}
-
-.imgprincipal-caso img {
-    width: 100%;
-    height: 400px;
-    border-radius: 8px;
-}
-
-.img-expandir {
-    margin-left: -22px;
-    position: absolute;
-    width: 16px !important;
-    height: 25px !important;
-}
-
-.cuerpotext-caso {
-    padding-left: 50px;
-}
-
-.Ncliente-casos {
-    color: #222222;
-    font-family: JosefinB;
-    font-size: 36px;
-    text-align: left;
-}
-
-.nombrecliente-casos {
-    margin-top: 20px;
-    color: #222222;
-    font-family: JosefinB;
-    font-size: 19px;
-    text-align: left;
-}
-
-.cargocliente-casos {
-    margin-top: 10px;
-    color: #9A8FB2;
-    font-family: JosefinR;
-    font-size: 19px;
-    text-align: left;
-}
-
-.desc-casos {
-    margin-top: 20px;
-    color: #222222;
-    font-family: CoreSans;
-    font-size: 24px;
-    text-align: left;
-    padding-right: 100px;
-
-}
-
-.btnmostrarmas-casos {
-    display: flex;
-    align-items: center;
-    width: max-content;
-    margin-top: 30px;
-    border-radius: 4px;
-    border: 1px solid #9A8FB2;
-    padding: 8px;
-    font-family: JosefinR;
     color: #351F65;
-    font-size: 14px;
+    font-family: JosefinL;
+    font-size: 24px;
+}
+
+.gridcaracteristicas-plataforma-daktico {
+    margin-top: 50px;
+    display: grid;
+    margin-left: 100px;
+    margin-right: 100px;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.gridcaracteristicas-plataforma-daktico div {
+    font-family: JosefinB;
+    color: #9A8FB2;
+    text-align: center;
+    font-size: 24px;
     cursor: pointer;
 }
 
-.btnmostrarmas-casos:hover {
-    background: #351F65;
-    color: white;
+.videocaracteristicas-plataforma-daktico {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    height: 305px;
 }
 
-.gridoculto-left-casos {
-    display: grid;
-    grid-template-columns: 40% 60%;
-    margin-top: 20px;
+.videocaracteristicas-plataforma-daktico video {
+
+    width: 640px;
+    border-radius: 16px;
+
 }
 
-.textoculto-left-casos {
-    font-family: RobotoR;
-    text-align: right;
-    padding-right: 15px;
-    color: #666666;
-}
-
-.imgoculto-left-casos img {
-    width: 100%;
-    height: 200px;
-}
-
-.gridoculto-right-casos {
-    display: grid;
-    width: 80%;
-
-    margin-right: auto;
-    grid-template-columns: 100%;
-    margin-top: 20px;
-}
-
-.gridoculto-right-casos div {
-    margin-top: 20px;
-    margin-bottom: 10px;
+.textvideo-plataforma-daktico {
+    position: absolute;
+    margin-top: 415px;
+    width: 400px;
+    height: max-content;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 0px 3px 6px #00000029;
     font-family: CoreSans;
-    font-size: 18px;
-    color: #444444;
-    text-align: left;
-    line-height: 30px;
+    letter-spacing: 0.5px;
+    line-height: 20px;
 }
+
+.textvideo-plataforma-daktico div {
+    padding: 30px;
+}
+
+.grupoimgbg-caracteristicas {
+    overflow: hidden;
+    width: 345px;
+    margin-top: -175px;
+    height: 400px;
+    position: absolute;
+    right: 0px;
+    z-index: -1;
+}
+
+.grupoimgbg-caracteristicas .img1bg-caracteristicas {
+    position: absolute;
+    margin-top: 91px;
+    margin-left: 89px;
+}
+
+.grupoimgbg-caracteristicas .img1bg-caracteristicas img {
+    width: 110px;
+}
+
+.grupoimgbg-caracteristicas .img2bg-caracteristicas {
+    position: absolute;
+    margin-top: 170px;
+    margin-left: 125px;
+}
+
+.grupoimgbg-caracteristicas .img2bg-caracteristicas img {
+    margin-top: -168px;
+    width: 270px;
+}
+
+.grupoimgbg-caracteristicas .img3bg-caracteristicas {
+    position: absolute;
+    margin-top: 162px;
+    margin-left: 245px;
+}
+
+.grupoimgbg-caracteristicas .img3bg-caracteristicas img {}
+
+.grupoimgbg-caracteristicas .img4bg-caracteristicas {
+    position: absolute;
+    margin-top: 154px;
+    margin-left: 204px;
+}
+
+.grupoimgbg-caracteristicas .img4bg-caracteristicas img {}
 
 
 footer {
@@ -380,7 +325,7 @@ footer {
     width: 100%;
 }
 
-.gridprincipalfooter-index-daktico {
+.gridprincipalfooter-plataforma-daktico {
 
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
@@ -391,18 +336,18 @@ footer {
     border-bottom: 1px solid #28174B;
 }
 
-.gridprincipalfooter-index-daktico div {
+.gridprincipalfooter-plataforma-daktico div {
     margin-left: auto;
     margin-right: auto;
 }
 
-.gridprincipalfooter-index-daktico div div {
+.gridprincipalfooter-plataforma-daktico div div {
     font-family: JosefinR;
     margin-bottom: 30px;
     font-size: 18px;
 }
 
-.gridprincipalfooter-index-daktico div div a {
+.gridprincipalfooter-plataforma-daktico div div a {
     text-decoration: none;
     color: #DED5F2;
     margin-top: 50px;
@@ -410,18 +355,18 @@ footer {
 
 }
 
-.gridprincipalfooter-index-daktico div div a img {
+.gridprincipalfooter-plataforma-daktico div div a img {
     height: 15px;
     width: 15px;
 
 
 }
 
-.gridprincipalfooter-index-daktico div div a span {
+.gridprincipalfooter-plataforma-daktico div div a span {
     padding-left: 10px;
 }
 
-.textfinalfooter-index-daktico {
+.textfinalfooter-plataforma-daktico {
     width: 100%;
     text-align: center;
     font-family: JosefinR;
@@ -431,7 +376,7 @@ footer {
 
 }
 
-.copyright-index-daktico {
+.copyright-plataforma-daktico {
     width: 100%;
     text-align: center;
     font-family: JosefinR;
@@ -441,68 +386,16 @@ footer {
     padding-bottom: 15px;
 }
 
-@media (max-width: 499px) {
+
+@media (max-width: 600px) {
 
 
-
-    .titulo-casos-daktico {
-        font-size: 36px;
-    }
-
-    .titulo-casos-daktico div {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    /*  */
-
-
-    .gridcliente-casos-daktico {
-        width: 90%;
-        grid-template-columns: 100%;
-
-
-    }
-
-    .imgprincipal-caso img {
-        width: 100%;
-        height: 350px;
-        border-radius: 8px;
-    }
-
-    .cuerpotext-caso {
-        margin-top: 20px;
-        padding-left: 10px;
-    }
-
-
-
-    .desc-casos {
-
-        padding-right: 10px;
-
-    }
-
-
-
-
-    .imgoculto-left-casos img {
-        width: 100%;
-        height: 200px;
-
-    }
-
-    .gridoculto-right-casos {
-        display: grid;
-        width: 90%;
-    }
-
-    .gridprincipalfooter-index-daktico {
+    .gridprincipalfooter-plataforma-daktico {
         grid-template-columns: 100%;
         justify-content: center;
     }
 
-    .gridprincipalfooter-index-daktico div {
+    .gridprincipalfooter-plataforma-daktico div {
         width: max-content;
         margin-left: 0px;
         margin-right: 0px;
@@ -511,163 +404,90 @@ footer {
     .imglogo-footer {
         margin-bottom: 20px;
     }
-
 }
 
+@media (max-width: 767px) {
 
-@media (min-width: 500px) and (max-width: 700px) {
+    .txt-46 {
+        font-size: 28px;
+    }
 
+   
+    .gridcaracteristicas-plataforma-daktico {
 
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-columns: 100%;
+    }
 
+    .gridcaracteristicas-plataforma-daktico div {
+        font-family: JosefinB;
+        color: #9A8FB2;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 24px;
+    }
+
+    .videocaracteristicas-plataforma-daktico {
+        width: 100%;
+        margin-top: 20px;
+        height: 305px;
+    }
+
+    .videocaracteristicas-plataforma-daktico video {
+        width: 100%;
+        background-size: cover;
+        object-fit: fill;
+    }
+
+    .textvideo-plataforma-daktico {
+        width: 80%;
+    }
+
+    .textvideo-plataforma-daktico div {
+        padding: 20px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 800px) {
     .imglogo-footer {
         display: none;
     }
 
-    .gridprincipalfooter-index-daktico {
-        grid-template-columns: 35% 35% 30% !important;
-        justify-content: center !important;
-        margin-left: 20px !important;
-        margin-right: 20px !important;
-    }
+    .gridprincipalfooter-plataforma-daktico {
 
-}
-
-@media (min-width: 500px) and (max-width: 1000px) {
-    .titulo-casos-daktico {
-        font-size: 40px;
-    }
-
-    .titulo-casos-daktico div {
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-
-    .gridcliente-casos-daktico {
-        width: 95%;
-        grid-template-columns: 50% 50%;
-
-
-    }
-
-    .imgprincipal-caso img {
-        width: 100%;
-        height: 350px;
-        border-radius: 8px;
-    }
-
-    .imgoculto-left-casos img {
-        width: 100%;
-        height: 200px;
-
-    }
-
-    .desc-casos {
-
-        padding-right: 10px;
-
-    }
-
-    .cuerpotext-caso {
-        margin-top: 20px;
-        padding-left: 10px;
-    }
-
-    .gridprincipalfooter-index-daktico {
-        grid-template-columns: 25% 25% 25% 25%;
-        justify-content: center;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-
-    .gridprincipalfooter-index-daktico div {
-        width: max-content;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-
-    .imglogo-footer {
-        margin-bottom: 20px;
-    }
-
-}
-
-@media (min-width: 1000px) and (max-width: 1024px) {
-    .titulo-casos-daktico div {
-        padding-left: 50px;
-        padding-right: 50px;
+        grid-template-columns: 33% 33% 33% !important;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 60px;
+        padding-bottom: 50px;
+        border-bottom: 1px solid #28174B;
     }
 }
 
-/* RESPONSIVE PANTALLAS GRANDES HD */
-@media (min-width: 2000px) {
-    .titulo-casos-daktico {
-
-        padding-top: 250px;
-        font-size: 60px;
-    }
-    .gridprincipal-casos-daktico {
-        margin-top: 100px;
-    }
-    .Ncliente-casos {
-        font-size: 46px;
-    }
-    .nombrecliente-casos {
-        font-size: 29px;
-    }
-    .cargocliente-casos {
-        font-size: 29px;
-    }
-    .desc-casos {
-        font-size: 34px;
-    }
-    .btnmostrarmas-casos {
-        height: 50px;
-        width: 300px !important;
-        justify-content: center;
-        border-radius: 5px;
-        font-size: 28px;
-    }
-    .gridoculto-right-casos div {
-        font-size: 28px;
-        line-height: 40px;
-    }
-    .textoculto-left-casos {
-        font-size: 26px;
-    }
-    .imgoculto-left-casos img {
-        width: 100%;
-        height: 350px;
-    }
-    
-    .imglogo-footer img {
-        width: 300px;
-    }
-
-    .gridprincipalfooter-index-daktico div div {
-        font-size: 34px;
-    }
-    .gridprincipalfooter-index-daktico div div a img {
-        height: 30px;
-        width: 30px;
-    }
-    .textfinalfooter-index-daktico {
-        font-size: 30px;
-    }
-    .copyright-index-daktico {
-        font-size: 27px;
+@media (min-width: 768px) and (max-width: 1000px) {
+.gridcaracteristicas-plataforma-daktico{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.gridcaracteristicas-plataforma-daktico div{
+    font-size: 16px;
+}
+}
+@media (min-width: 1001px) and (max-width: 1200px) {
+    .gridcaracteristicas-plataforma-daktico{
+        margin-left: 20px;
+        margin-right: 20px;
     }
 }
-
-/* FIIINNN  RESPONSIVE PANTALLAS GRANDES HD */
 
 /* MENU RESPONSIVO */
 
 @media (max-width: 700px) {
-    .linea {
+    .linea{
         margin-left: auto !important;
         margin-right: auto !important;
     }
-
     .icono-menu {
         display: block;
         width: 45px;
@@ -750,11 +570,9 @@ footer {
         font-weight: bold;
         margin-right: 0px;
     }
-
-    #btndemo-menu {
+    #btndemo-menu{
         margin-right: auto;
     }
-
     .btndemo-index-daktico {
         width: 120px;
         margin-right: auto;
@@ -765,11 +583,10 @@ footer {
 }
 
 @media (min-width: 701px) and (max-width: 800px) {
-    .items-index div {
+    .items-index div{
         display: flex;
         align-items: center;
     }
-
     .logo-index-daktico {
         width: 20%;
         margin-left: 10px;
@@ -795,11 +612,10 @@ footer {
 }
 
 @media (min-width: 801px) and (max-width: 1200px) {
-    .items-index div {
+    .items-index div{
         display: flex;
         align-items: center;
     }
-
     .logo-index-daktico {
         width: 20%;
         margin-left: 10px;
@@ -812,8 +628,7 @@ footer {
     .logo-index-daktico a img {
         width: 120px;
     }
-
-    .itemsmenu-index-daktico div a {
+    .itemsmenu-index-daktico div  a{
         margin-left: 15px;
         font-weight: bold;
         margin-right: 15px;
@@ -821,43 +636,4 @@ footer {
 
 
 }
-
-@media (min-width: 2000px) {
-    .admin-index-daktico {
-        height: 50px;
-    }
-
-    .admin-index-daktico span {
-        font-size: 24px;
-    }
-
-    .admin-index-daktico img {
-        width: 25px !important;
-        height: 25px !important;
-    }
-
-    .logo-index-daktico a img {
-        width: 300px;
-    }
-
-    .admin-index-daktico div span {
-        margin-left: 10px;
-    }
-
-    .menu-index-daktico {
-        height: 120px;
-    }
-
-    .menu-index-daktico a {
-        font-size: 30px;
-    }
-
-    .btn1M {
-        width: 250px;
-        font-size: 30px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-    }
-}
-
 /* FIN MENU RESPONSIVO */

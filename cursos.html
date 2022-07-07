@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cursosdaktico.css">
+    <title>Cursos | Daktico</title>
+</head>
+
+<body>
+    <div id="app">
+        <div class="headerprincipal-index-daktico">
+            <div class="admin-index-daktico">
+                <div>
+                    <span  @click="rutaFormulario()">Contactar con ventas</span>
+                    <span>Soporte</span>
+                    <!-- <span>Registrarse</span> -->
+                    <div>
+                        <img src="img/icon/user.svg" height="17px" width="17px" alt="">
+                        <span>Ingresar</span>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-index-daktico">
+                <div class="logo-index-daktico">
+                    <img src="img/icono-salir.svg" @click="changueMenuSalir()" id="btnSalir" class="icono-salir"
+                        width="45px" height="45px" alt="">
+                    <img src="img/icono-menu.svg" @click="changueMenu()" id="btnMenu" class="icono-menu" alt="">
+                    <a href="index.html">
+                        <img src="img/Grupo 199.svg" width="200px" alt=""></a>
+                </div>
+                <div class="itemsmenu-index-daktico" id="divMenu">
+                    <div class="items-index">
+                        <div>
+                            <a href="plataforma.html">Plataforma
+                               
+                            </a>
+                        </div>
+                        <div> <a href="#"> Cursos  <span class="linea"></span></a></div>
+                        <div> <a href="casos.html">Casos de éxito</a></div>
+                        <!-- <div> <a href="#"> <span>Precios</span></a></div>
+                        <div> <a href="#"><span>Market</span></a></div> -->
+                        <!-- <div class="btndemo-index-daktico Roboto_medium" id="btndemo-menu"><span>Solicita una
+                                    demo</span></div> -->
+                        <div class="btndemo-index-daktico Roboto_medium" id="btndemo-menu"  @click="rutaFormulario()">Prueba Daktico</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="caracteristicas-plataforma-daktico">
+            <div class="textcaracteristicas-plataforma-daktico"> <span>CARACTERÍSTICAS</span></div>
+            <div class="gridcaracteristicas-plataforma-daktico">
+                <div><span>Personalizable</span></div>
+                <div><span>Multidiciplinario</span></div>
+                <div><span>Seguro</span></div>
+                <div><span>Modular</span></div>
+                <div><span>Versátil</span></div>
+            </div>
+            <div>
+                <div class="videocaracteristicas-plataforma-daktico">
+                    <video controls>
+                        <source src="video/videoprueba.mp4" type="video/mp4">
+                    </video>
+                    <div class="textvideo-plataforma-daktico">
+                        <div><span>Potencia tu LMS actual con los cursos que puedes crear en la plataforma.</span></div>
+                    </div>
+                    <div >
+                        <div class="grupoimgbg-caracteristicas">
+
+                      <div class="img1bg-caracteristicas">
+                        <img src="img/Grupo 194.svg" alt="">
+                    </div>
+                    <div class="img2bg-caracteristicas">
+                        <img src="img/Trazado 79320.svg"  alt="">
+                    </div>
+                    <div class="img3bg-caracteristicas">
+                        <img src="img/Trazado 79326.svg" alt="">
+                    </div>
+                    <div class="img4bg-caracteristicas">
+                        <img src="img/Trazado 79331.svg"  alt="">
+                    </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <footer>
+            <div class="gridprincipalfooter-plataforma-daktico">
+                <div class="imglogo-footer"> <img src="img/Imagen 1.svg" alt=""></div>
+                <div>
+                    <div><a href="">Blog</a> </div>
+                    <div><a href="">Crear cursos</a></div>
+                    <div><a href="">Solicitar asesoria</a></div>
+                    <div><a href="">Jugar ahora</a></div>
+                    <div><a href="">Sobre la plataforma</a></div>
+                </div>
+                <div>
+                    <div><a href="">Contáctanos</a></div>
+                    <div><a href="">Solicita una demo</a></div>
+                    <div><a href="">Empresa</a></div>
+                    <div><a href="">Términos y Condiciones</a></div>
+                    <div><a href="">Políticas y Privacidad</a></div>
+                </div>
+                <div>
+                    <div><a href=""><img src="img/icon/facebook-icon.svg" alt=""> <span>Facebook</span></a> </div>
+                    <div><a href=""><img src="img/icon/instagram-icon.svg" alt=""> <span>Instagram</span></a> </div>
+                    <div><a href=""><img src="img/icon/linkedln-icon.svg" alt=""> <span>Linkedln</span></a> </div>
+                </div>
+
+            </div>
+            <div class="textfinalfooter-plataforma-daktico">
+                <span>Av. Benavides 1944 Miraflores, Lima, Lima, Perú - Cel..: +511 990 065 725</span>
+            </div>
+
+            <div class="copyright-plataforma-daktico"><span>Copyright © 2022, Daktico Todos los derechos
+                    reservados.</span>
+            </div>
+
+
+        </footer>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script src="js/plataforma.js"></script>
+</html>
+

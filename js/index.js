@@ -11,10 +11,10 @@
 //          },
 //     },
 
-    
+
 //     template: 
-    
-    
+
+
 //             `
 //         <div class="cardopinan-index-daktico">
 //             <div class="cuerpo-cardopinan">
@@ -41,15 +41,15 @@ Vue.component("carta-opinion", {
         return {
             showMore: false,
         }
-    },methods: {
-        verCaso(id){
-         //   console.log('pagina.php?Variable='+id+'')
-            window.location.href = 'casos.html?clt='+id+''
-         },
-    },  
-    template: 
+    }, methods: {
+        verCaso(id) {
+            //   console.log('pagina.php?Variable='+id+'')
+            window.location.href = 'casos.html?clt=' + id + ''
+        },
+    },
+    template:
 
-            `
+        `
         <div class="cardopinan-index-daktico">
             <div class="cuerpo-cardopinan">
             <p v-if="!showMore">{{ value.textoprincipal.substring(0, num_caracteres) }} </p>
@@ -145,6 +145,36 @@ var app = new Vue({
                 btnopinan.innerHTML = "Leer menos"
             }
         },
+        verCaso(id) {
+            //   console.log('pagina.php?Variable='+id+'')
+            window.location.href = 'casos.html?clt=' + id + ''
+        },
+        changueMenu() {
+            const btnMenu = document.getElementById("btnMenu");
+            const btnSalir = document.getElementById("btnSalir");
+            const divMenu = document.getElementById("divMenu");
+
+
+            if (divMenu.style.display = "none") {
+                divMenu.style.display = "block"
+                btnSalir.style.display = "block"
+                btnMenu.style.display = "none"
+
+            }
+        },
+        changueMenuSalir() {
+            const btnMenu = document.getElementById("btnMenu");
+            const btnSalir = document.getElementById("btnSalir");
+            const divMenu = document.getElementById("divMenu");
+
+
+            if (divMenu.style.display = "block") {
+                divMenu.style.display = "none"
+                btnSalir.style.display = "none"
+                btnMenu.style.display = "block"
+
+            }
+        },
         changueCaracteristica(id) {
             const imgflecha1 = document.getElementById("imgflecha1");
             const imgflecha2 = document.getElementById("imgflecha2");
@@ -219,7 +249,10 @@ var app = new Vue({
             imgflecha3.classList.add("nonecarac")
             imgflecha4.classList.add("nonecarac")
         },
-        
+        rutaFormulario() {
+            window.location.href = "../formulario.html";
+        }
+
 
 
     },

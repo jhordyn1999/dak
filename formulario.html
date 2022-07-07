@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/formulario.css">
+    <title>Demo</title>
+</head>
+
+<body>
+    <div id="app">
+        <div class="headerprincipal-index-daktico">
+            <div class="admin-index-daktico">
+                <div>
+                    <span>Contactar con ventas</span>
+                    <span>Soporte</span>
+                    <!-- <span>Registrarse</span> -->
+                    <div>
+                        <img src="img/icon/user.svg" height="17px" width="17px" alt="">
+                        <span>Ingresar</span>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-index-daktico">
+                <div class="logo-index-daktico">
+                    <img src="img/icono-salir.svg" @click="changueMenuSalir()" id="btnSalir" class="icono-salir"
+                        width="45px" height="45px" alt="">
+                    <img src="img/icono-menu.svg" @click="changueMenu()" id="btnMenu" class="icono-menu" alt="">
+                    <a href="index.html">
+                        <img src="img/Grupo 199.svg" width="200px" alt=""></a>
+                </div>
+                <div class="itemsmenu-index-daktico" id="divMenu">
+                    <div class="items-index">
+                        <div> <a href="plataforma.html"> <span>Plataforma</span></a></div>
+                        <div> <a href="cursos.html"> <span>Cursos</span></a></div>
+                        <div> <a href="casos.html"><span>Casos de éxito</span></a></div>
+                        <!-- <div> <a href="#"> <span>Precios</span></a></div>
+                        <div> <a href="#"><span>Market</span></a></div> -->
+                        <!-- <div class="btndemo-index-daktico Roboto_medium" id="btndemo-menu"><span>Solicita una
+                                    demo</span></div> -->
+                        <div class="btndemo-index-daktico Roboto_medium btn1M" id="btndemo-menu">Prueba Daktico</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-formulario">
+            <div class="titulo-formulario">¡Agendemos una reunión!</div>
+            <div class="descripcion-formulario"><span>Completa tus datos y pronto un ejecutivo se pondrá en contacto
+                    para organizar una reunión.</span></div>
+            <form action="" method="post">
+                <div class="containergrid-formulario">
+                    <div class="gridformulario">
+                        <div> <input class="inputText" placeholder="Nombre" type="text" name="" id="txtnombre"> </div>
+                        <div><input class="inputText" placeholder="Apellido" type="text" name="" id="txtapellido">
+                        </div>
+                    </div>
+                    <div class="gridformulario">
+                        <div> <input class="inputText" placeholder="Empresa" type="text" name="" id="txtempresa"> </div>
+                        <div><input class="inputText" placeholder="Correo corporativo" type="text" name=""
+                                id="txtcorreo"> </div>
+                    </div>
+                    <div class="gridformulario">
+                        <div> <input class="inputText" placeholder="Cargo" type="text" name="" id="txtcargo">
+                        </div>
+                        <div><input class="inputText" placeholder="Celular" type="number" name="" id="txtcelular">
+                        </div>
+                    </div>
+                    <div class="gridformulario">
+                        <div> <input class="inputText" list="paises" placeholder="Pais" type="text" name=""
+                                id="txtpais">
+                            <datalist id="paises">
+                                <option v-for="(lste, index) in listado_pais" :key="index">{{lste.nombre}}</option>
+                            </datalist>
+                        </div>
+
+
+
+
+                        <div class="select"> <select class="inputText inputSelect" name="" id="txtinteres">
+                                <option disabled selected value="">¿Cuál es tu interés?</option>
+                                <option value="Necesito que virtualicen mis cursos">Necesito que virtualicen mis cursos
+                                </option>
+                                <option value="Busco una plataforma LMS">Busco una plataforma LMS</option>
+                                <option value="Quiero potenciar mi actual LMS">Quiero potenciar mi actual LMS</option>
+                                <option value="Otras soluciones e-learning">Otras soluciones e-learning</option>
+                            </select> </div>
+                    </div>
+                    <div class="gridformulario">
+                        <div class="select"> <select class="inputText inputSelect" name="" id="txtlms">
+                                <option disabled selected value="">¿Cuentas con un LMS?</option>
+                                <option value="No tengo">No tengo</option>
+                                <option value="Moodle">Moodle</option>
+                                <option value="Success Factors">Success Factors</option>
+                                <option value="Blackboard">Blackboard</option>
+                                <option value="Brainshark">Brainshark</option>
+                                <option value="Otras">Otras</option>
+                            </select> </div>
+                            <div><input style="visibility: hidden !important;" class="inputText" placeholder="Celular" type="number" name="" id="txtcelular">
+                            </div>
+                    </div>
+                    <div class="divtextarea"><textarea class="inputText inputTextarea" name=""
+                            placeholder="Cuéntanos un poco más sobre tu interés." id="txtdescripcion" cols="30"
+                            rows="10"></textarea>
+                    </div>
+                    <div class="btndemo-index-daktico Roboto_medium centrado btn1F" @click="enviarDatos()" id="btnenviar">
+                        Enviar</div>
+
+                </div>
+            </form>
+        </div>
+
+        <div class="confian-index-daktico">
+            <div class="textconfian-index-daktico">
+                <div> <span> Confían en nosotros</span></div>
+            </div>
+            <div class="gridconfian-index-daktico">
+
+                <div><img class="imgplomo" src="img/logo QROMA.svg" alt=""></div>
+                <div><img class="imgplomo" src="img/logo TASA.svg" alt=""></div>
+                <div><img class="imgplomo" src="img/logo Urbanova.svg" alt=""></div>
+                <div><img class="imgplomo" src="img/Logo MINSUR.svg" alt=""></div>
+                <div><img class="imgplomo" src="img/logo MARCOBRE.svg" alt=""></div>
+
+            </div>
+        </div>
+        <footer>
+            <div class="gridprincipalfooter-index-daktico">
+                <div class="imglogo-footer"> <img src="img/Imagen 1.svg" alt=""></div>
+                <div>
+                    <div><a href="">Blog</a> </div>
+                    <div><a href="">Crear cursos</a></div>
+                    <div><a href="">Solicitar asesoria</a></div>
+                    <div><a href="">Jugar ahora</a></div>
+                    <div><a href="">Sobre la plataforma</a></div>
+                </div>
+                <div>
+                    <div><a href="">Contáctanos</a></div>
+                    <div><a href="">Solicita una demo</a></div>
+                    <div><a href="">Empresa</a></div>
+                    <div><a href="">Términos y Condiciones</a></div>
+                    <div><a href="">Políticas y Privacidad</a></div>
+                </div>
+                <div>
+                    <div><a href=""><img src="img/icon/facebook-icon.svg" alt=""> <span>Facebook</span></a> </div>
+                    <div><a href=""><img src="img/icon/instagram-icon.svg" alt=""> <span>Instagram</span></a> </div>
+                    <div><a href=""><img src="img/icon/linkedln-icon.svg" alt=""> <span>Linkedln</span></a> </div>
+                </div>
+
+            </div>
+            <div class="textfinalfooter-index-daktico">
+                <span>Av. Benavides 1944 Miraflores, Lima, Lima, Perú - Cel..: +511 990 065 725</span>
+            </div>
+
+            <div class="copyright-index-daktico"><span>Copyright © 2022, Daktico Todos los derechos
+                    reservados.</span>
+            </div>
+
+
+        </footer>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fetch-jsonp/1.1.1/fetch-jsonp.js"></script>
+<script src="js/formulario.js"></script>
+
+</html>

@@ -14,7 +14,7 @@
         <div class="headerprincipal-index-daktico">
             <div class="admin-index-daktico">
                 <div>
-                    <span>Contactar con ventas</span>
+                    <span  @click="rutaFormulario()">Contactar con ventas</span>
                     <span>Soporte</span>
                     <!-- <span>Registrarse</span> -->
                     <div>
@@ -25,21 +25,31 @@
             </div>
             <div class="menu-index-daktico">
                 <div class="logo-index-daktico">
+                    <img src="img/icono-salir.svg" @click="changueMenuSalir()" id="btnSalir" class="icono-salir"
+                        width="45px" height="45px" alt="">
+                    <img src="img/icono-menu.svg" @click="changueMenu()" id="btnMenu" class="icono-menu" alt="">
                     <a href="index.html">
-                        <img src="img/Grupo 199.svg"  width="200px" alt=""></a>
+                        <img src="img/Grupo 199.svg" width="200px" alt=""></a>
                 </div>
-                <div class="itemsmenu-index-daktico">
+                <div class="itemsmenu-index-daktico" id="divMenu">
                     <div class="items-index">
-                        <div> <a href="plataforma.html"> <span>Plataforma</span></a></div>
-                        <div> <a href="#"> <span>Cursos</span></a></div>
+                        <div>
+                            <a href="plataforma.html">Plataforma
+                               
+                            </a>
+                        </div>
+                        <div> <a href="cursos.html"> Cursos  </a></div>
                         <div> <a href="#">Casos de éxito <span class="linea"></span></a></div>
                         <!-- <div> <a href="#"> <span>Precios</span></a></div>
                         <div> <a href="#"><span>Market</span></a></div> -->
-                        <div class="btndemo-index-daktico"><span>Solicitar una demo</span></div>
+                        <!-- <div class="btndemo-index-daktico Roboto_medium" id="btndemo-menu"><span>Solicita una
+                                    demo</span></div> -->
+                        <div class="btndemo-index-daktico Roboto_medium btn1M" id="btndemo-menu"  @click="rutaFormulario()">Prueba Daktico</div>
                     </div>
                 </div>
             </div>
         </div>
+
         <div class="titulo-casos-daktico">
             <div><span>Lorem Ipsum is <span class="subr-casos"> simply dummy </span>text of the printing</span></div>
         </div>
@@ -124,13 +134,13 @@
                 <div>
                     <div><a href="">Blog</a> </div>
                     <div><a href="">Crear cursos</a></div>
-                    <div><a href="">Solicitar asesoria</a></div>
+                    <div><a href="formulario.html">Solicitar asesoria</a></div>
                     <div><a href="">Jugar ahora</a></div>
                     <div><a href="">Sobre la plataforma</a></div>
                 </div>
                 <div>
-                    <div><a href="">Contáctanos</a></div>
-                    <div><a href="">Solicita una demo</a></div>
+                    <div><a href="formulario.html">Contáctanos</a></div>
+                    <div><a href="formulario.html">Solicita una demo</a></div>
                     <div><a href="">Empresa</a></div>
                     <div><a href="">Términos y Condiciones</a></div>
                     <div><a href="">Políticas y Privacidad</a></div>

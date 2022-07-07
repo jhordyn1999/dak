@@ -92,13 +92,24 @@ a {
     font-weight: bold;
 }
 
+.icono-salir {
+    display: none;
+}
+
+.icono-menu {
+    display: none;
+}
+
 .headerprincipal-index-daktico {
+    position: fixed;
     width: 100%;
+    top: 0px;
+    z-index: 999;
 }
 
 .admin-index-daktico {
     width: 100%;
-    height: 30px;
+    height: 40px;
     background: #130B24;
     color: #E8E2F6;
     display: flex;
@@ -107,8 +118,9 @@ a {
 
 .admin-index-daktico span {
     font-family: CoreSans;
-    font-size: 12px;
+    font-size: 14px;
     margin-right: 40px;
+    cursor: pointer;
 }
 
 .admin-index-daktico div {
@@ -123,14 +135,18 @@ a {
 .menu-index-daktico {
     width: 100%;
     height: 70px;
+    position: relative;
     background: #fff;
     color: #351F65 !important;
     display: flex;
+    box-shadow: 0px 3px 6px #00000029;
 }
+
 
 .menu-index-daktico a {
     color: #351F65 !important;
     font-family: JosefinB;
+    font-size: 19px;
 }
 
 .logo-index-daktico {
@@ -151,46 +167,25 @@ a {
     align-items: center;
 }
 
-.itemsmenu-index-daktico div span {
+.items-index div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.itemsmenu-index-daktico div a {
 
     font-weight: bold;
     margin-right: 50px;
 }
 
-/* 
-.btndemo-index-daktico {
-    width: 150px;
-    height: 40px;
-
-    margin-right: 30px;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
+.btn1f4 {
+    margin-top: 0px !important;
 }
 
-.btndemo-index-daktico span {
-    color: #FFFFFF;
-    cursor: pointer;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    position: absolute;
-    width: 150px;
-    height: 40px;
-    margin-left: 5px;
-    margin-bottom: 10px;
-    background: #F4364C;
-    border-radius: 5px;
-    font-size: 14px;
-    font-weight: normal !important;
-    margin-right: 0px !important;
-} */
-
-
-/* .btndemo-index-daktico:hover {
-    background: #9A8FB2;
-} */
-
+#btndemo-menu {
+    margin-right: 50px;
+}
 
 .btndemo-index-daktico {
     width: 150px;
@@ -205,7 +200,8 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 10px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .btndemo-index-daktico:hover {
@@ -238,7 +234,7 @@ a {
     height: 40px;
     background: #fff;
     color: #351F65;
-    border: 3px solid #351F65;
+    border: 1px solid #351F65;
     border-radius: 5px;
     position: relative;
     z-index: 1;
@@ -246,7 +242,8 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 10px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .btndemo2-index-daktico:hover {
@@ -255,18 +252,15 @@ a {
 }
 
 .btndemo2-index-daktico::after {
-    width: 148px;
-    height: 38px;
+    padding: 16px 20px;
     content: "";
     background: #351F65;
     position: absolute;
     z-index: -1;
-
-    left: 0.5;
-    right: 0.5;
-    top: 0.5;
-    bottom: 1;
-
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
     transform: scale(0, 0) rotate(-180deg);
     transition: all 0.4s ease;
 }
@@ -276,6 +270,9 @@ a {
     transform: scale(1, 1) rotate(0deg);
 }
 
+.bodyprincipal-index-daktico {
+    padding-top: 123px;
+}
 
 .contenedorprincipal-index-daktico {
     width: 100%;
@@ -298,34 +295,41 @@ a {
     margin-bottom: 0px;
 }
 
-.fila2principal-index-daktico {
-    width: 95%;
-    font-family: JosefinB;
-    height: max-content;
-    background: #FFFFFF;
-    margin-left: 15px;
-    margin-top: 5px;
+.bnrblanco-fondo {
 
-    padding-bottom: 7px;
-    padding-right: 7px;
+    width: 668px;
+    height: 180px;
+    background: white;
+    position: absolute;
+    margin-top: 10px;
+
+}
+
+.fila2principal-index-daktico {
+    width: 645px;
+    height: 200px;
+    font-family: JosefinB;
+    padding-left: 15px;
+    margin-top: 5px;
+    background: #351F65;
+    position: relative;
+
 }
 
 .fila2principal-index-daktico h2 {
     margin-top: 0px;
-
-    display: flex;
     text-align: left;
     padding-left: 100px;
-    height: max-content;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 35px;
+    padding-bottom: 35px;
     margin-left: -15px;
-    margin-bottom: 0px;
-    background: #351F65;
-    font-size: 46px;
+    font-size: 38px;
     font-weight: normal !important;
+    margin-bottom: 0px;
+
 
 }
+
 
 .fila3principal-index-daktico {
     font-family: CoreSans;
@@ -343,11 +347,18 @@ a {
 .item2principal-index-daktico {
     overflow: hidden;
     width: 100%;
-    margin-top: -300px;
-    /* height: 400px;
+
+}
+
+.groupimg-item2 {
     position: absolute;
-    right: 0px;
-    z-index: -1; */
+}
+
+.divimgsimbolo {
+    width: 100%;
+    overflow-y: hidden;
+    justify-content: center;
+    display: flex;
 }
 
 .imgsimbolo-item2 {
@@ -358,109 +369,21 @@ a {
 
 }
 
-.imgcuadrado-item2 {
-
-    position: absolute;
-    top: 120px;
-
-}
-
-.imgcuadrado-item2 img {
-
-    width: 108px;
-    height: 104px;
-}
-
-.imgcuadrado2-item2 {
-    /* 
-    left: 1120px;
-    
-    */
-    position: absolute;
-    right: 130px;
-    top: 190px;
-
-
-}
-
-.imgcuadrado2-item2 img {
-    width: 160px;
-    height: 120px;
-    z-index: -1;
-
-}
-
-.imgcircular-item2 {
-    position: absolute;
-    right: 125px;
-    margin-top: 0px;
-}
-
-.imgcircular-item2 img {
-    width: 300px;
-    height: 300px;
-}
-
-.imgpunto1-item2 {
-    position: absolute;
-    right: 120px;
-    top: 165px;
-}
-
-.imgpunto1-item2 img {}
-
-.imgcirculochico-item2 {
-    position: absolute;
-    right: 50px;
-    margin-top: -50px;
-
-}
-
-.imgcirculochico-item2 img {}
-
-.imgpunto2-item2 {
-    position: absolute;
-    right: 56px;
-    margin-top: -10px;
-}
-
-.imgpunto2-item2 img {}
-
-.imgc-item2 {
-    position: absolute;
-    right: -90px;
-    margin-top: 50px;
-}
-
-.imgc-item2 img {}
-
-.imgx-item2 {
-    position: absolute;
-    right: 20px;
-    bottom: 50px;
-}
-
-.imgx-item2 img {}
-
-
-
-
-
-
-
 .fila4principal-index-daktico {
     width: 100%;
     text-align: center;
-    margin-left: 100px;
+
     margin-top: 50px;
     margin-bottom: 130px;
 
 }
 
-.fila4principal-index-daktico div {
+.group-botones-fila4 {
     display: flex;
-    align-items: center;
+    width: 55%;
+    margin-left: 70px
 }
+
 
 .opinion-index-daktico {
     width: 100%;
@@ -498,6 +421,10 @@ a {
     margin-top: 20px;
     font-family: JosefinR;
     font-size: 21px;
+}
+
+.cuerpoopinion {
+    margin-left: 20px;
 }
 
 .groupimgopinion {
@@ -553,6 +480,7 @@ a {
     margin-bottom: 70px;
     width: 100%;
     text-align: center;
+    color: #351F65;
 }
 
 .imgplomo {
@@ -569,7 +497,7 @@ a {
     font-family: JosefinB;
     font-size: 36px;
     padding-bottom: 7px;
-    /* border-bottom: 1pt solid #6666; */
+
 }
 
 .gridconfian-index-daktico div {
@@ -625,9 +553,7 @@ a {
     grid-template-columns: 50% 50%;
 }
 
-/* .gridcaracteristicas-index-daktico div {
-    margin: auto
-} */
+
 .column1caracteristicas-index-daktico {
     width: 60%;
     margin: auto;
@@ -682,7 +608,7 @@ a {
     color: #000 !important;
     font-size: 19px;
     font-weight: normal !important;
-    /* box-shadow: -10px 10px #d0c9df; */
+
 }
 
 .itemcaracteristicaseleccionado {
@@ -700,7 +626,7 @@ a {
 }
 
 .btncaracteristicas {
-    width: 250px;
+    width: 250px !important;
     height: 50px;
     padding: 0px 5px;
     display: flex;
@@ -718,13 +644,18 @@ a {
 }
 
 .divimg-caracteristicas {
-    /* position: absolute; */
+
     margin-top: 20px;
     width: 350px;
     text-align: justify;
-    z-index: 1;
+
 }
 
+.divimg-caracteristicas div {
+    width: max-content;
+    z-index: 9;
+    position: relative;
+}
 
 .imggif-index-daktico {
     height: 250px;
@@ -734,7 +665,7 @@ a {
 }
 
 .cajabtn {
-    width: 100%;
+    width: 100% !important;
     justify-content: center;
     display: flex;
 }
@@ -925,7 +856,6 @@ fieldset {
 
 .btndiseñamos div {
     cursor: pointer;
-    /* margin-left: 50px; */
     align-items: center;
     display: flex;
     justify-content: center;
@@ -934,9 +864,9 @@ fieldset {
     height: 63px;
     font-family: ItimR;
     font-size: 32px;
-    /* color: #FFFFFF; */
-    -webkit-text-fill-color: #FFFFFF;
-    -webkit-text-stroke: 1px black;
+    color: #FFFFFF;
+
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
 }
 
 .btndiseñamos p {
@@ -1012,16 +942,468 @@ footer {
     padding-bottom: 15px;
 }
 
-@media (max-width: 424px) {
-    /* .column1caracteristicas-index-daktico div {
+@media (max-width: 330px) {
+    .bnrblanco-fondo {
+        width: 295px;
+        height: 150px;
+        background: white;
+        position: absolute;
+        margin-top: 10px;
 
-        margin-left: 0px !important;
-    } */
-    .column1caracteristicas-index-daktico {
-        width: 100% !important;
+    }
+
+    .fila2principal-index-daktico {
+        width: 270px;
+        height: 170px;
+    }
+
+    .fila2principal-index-daktico h2 {
+        padding-left: 10px;
+        font-size: 28px;
+        font-weight: normal !important;
+
+    }
+
+    .group-botones-fila4 {
+        display: flex;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
+}
+
+@media (min-width: 100px) and (max-width: 1000px) {
+    .fila2principal-index-daktico h2 {
+        padding-left: 10px;
+        font-size: 28px;
+        font-weight: normal !important;
+
+
+    }
+
+}
+
+@media (min-width: 330px) and (max-width: 400px) {
+    .bnrblanco-fondo {
+        width: 325px;
+        height: 140px;
+        background: white;
+        position: absolute;
+        margin-top: 10px;
+
+    }
+
+    .fila2principal-index-daktico {
+        width: 300px;
+        height: 160px;
+    }
+
+    .group-botones-fila4 {
+        display: flex;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+@media (min-width: 401px) and (max-width: 500px) {
+    .bnrblanco-fondo {
+        width: 375px;
+        height: 120px;
+        background: white;
+        position: absolute;
+        margin-top: 10px;
+
+    }
+
+    .fila2principal-index-daktico {
+        width: 350px;
+        height: 140px;
+    }
+
+    .group-botones-fila4 {
+        display: flex;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 600px) {
+    .bnrblanco-fondo {
+        width: 475px;
+        height: 110px;
+        background: white;
+        position: absolute;
+        margin-top: 10px;
+
+    }
+
+    .fila2principal-index-daktico {
+        width: 450px;
+        height: 130px;
+    }
+
+    .group-botones-fila4 {
+        display: flex;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 800px) {
+    .bnrblanco-fondo {
+        width: 525px;
+        height: 110px;
+        background: white;
+        position: absolute;
+        margin-top: 10px;
+
+    }
+
+    .fila2principal-index-daktico {
+        width: 500px;
+        height: 130px;
+    }
+
+    .group-botones-fila4 {
+        display: flex;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1000px) {
+    .bnrblanco-fondo {
+        width: 395px;
+        height: 110px;
+        background: white;
+        position: absolute;
+        margin-top: 10px;
+
+    }
+
+    .fila2principal-index-daktico {
+        width: 370px;
+        height: 130px;
+    }
+
+    .group-botones-fila4 {
+        display: flex;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 1001px) and (max-width: 1200px) {
+    .bnrblanco-fondo {
+        width: 495px;
+        height: 180px;
+        background: white;
+        position: absolute;
+        margin-top: 10px;
+
+    }
+
+    .fila2principal-index-daktico {
+        width: 470px;
+        height: 200px;
+    }
+
+    .group-botones-fila4 {
+        display: flex;
+        width: 65%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 1300px) {
+    .bnrblanco-fondo {
+        width: 525px;
+        height: 180px;
+        background: white;
+        position: absolute;
+        margin-top: 10px;
+
+    }
+
+    .fila2principal-index-daktico {
+        width: 500px;
+        height: 200px;
+    }
+
+    .group-botones-fila4 {
+        display: flex;
+        width: 65%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+/* RESPONSIVE PANTALLAS GRANDES EN HD */
+@media (min-width: 2000px) {
+    
+
+    .bodyprincipal-index-daktico {
+        padding-top: 130px;
+        padding-bottom: 130px;
+    }
+    .fila1principal-index-daktico{
+        margin-top: 100px;
+    }
+    .fila4principal-index-daktico {
+        margin-top: 130px;
+        margin-bottom: 100px;
+    }
+    .fila1principal-index-daktico h4 {
+        font-size: 30px;
+    }
+
+    .bnrblanco-fondo {
+        width: 975px;
+        height: 280px;
+        background: white;
+        position: absolute;
+        margin-top: 10px;
+
+    }
+
+    .fila2principal-index-daktico {
+        width: 950px;
+        height: 300px;
+    }
+
+    .fila2principal-index-daktico h2 {
+
+        text-align: left;
+        padding-left: 100px;
+        padding-top: 55px;
+        padding-bottom: 50px;
+        margin-left: -15px;
+        font-size: 58px;
+        font-weight: normal !important;
+        margin-bottom: 0px;
+    }
+
+    .fila3principal-index-daktico h3 {
+        font-size: 30px;
+    }
+
+    .btn1f4 {
+        width: 300px !important;
+        font-size: 24px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .btn2f4 {
+        margin-left: 50px;
+        width: 300px !important;
+        font-size: 24px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        height: 40px;
+
+    }
+
+    .imgestrella-index-daktico {
+        position: relative;
+
+    }
+
+    .imgestrella-index-daktico img {
+        width: 300px;
+    }
+
+    .textcaracteristicas-index-daktico {
+        padding-top: 30px;
+        font-size: 60px;
+    }
+
+    .column1caracteristicas-index-daktico {
+        width: max-content;
+        margin: auto;
+    }
+
+    .column2caracteristicas-index-daktico {
+        width: max-content !important;
+        margin: auto;
+        margin-top: 0px;
+        position: inherit !important;
+    }
+
+    .divimg-caracteristicas {
+        width: max-content;
+        position: relative !important;
+    }
+
+    .grupoimg-caracteristicas {
+        margin-top: -487px !important;
+        right: 104px !important;
+
+    }
+
+
+
+    .imgopinion-center img {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        background-size: contain;
+    }
+
+    .groupopinion-index-daktico span {
+        font-size: 40px;
+    }
+
+    .nombreopinion {
+        font-size: 37px;
+    }
+
+    .cargoopinion {
+        font-size: 30px;
+    }
+
+    .leermas-index-daktico span {
+        font-size: 30px !important;
+    }
+
+    .leermas-index-daktico img {
+        width: 50px;
+        height: 30px;
+    }
+
+    .itemcolum1caracteristicas {
+        margin-top: 50px;
+    }
+
+    .itemcaracteristicaseleccionado span {
+        width: 625px !important;
+        font-size: 36px !important;
+    }
+
+    .itemcarac {
+        width: 700px;
+        height: 100px;
+    }
+
+    .itemcarac span {
+        width: 625px;
+        height: 100px;
+        font-size: 36px;
+    }
+
+    .imggif-index-daktico {
+        width: 800px;
+        height: 586px;
+        border-radius: 44px;
+    }
+
+    .btncaracteristicas {
+        width: 400px !important;
+        height: 65px;
+        padding: 0px 5px;
+        display: flex;
+        align-items: center;
+        font-size: 34px;
+    }
+
+    .grupoimg-caracteristicas {
+        overflow: hidden;
+        width: 390px;
+        margin-top: -50px;
+        height: 400px;
+        position: absolute;
+        right: 150px;
+        z-index: -1;
+    }
+
+    .bgpunto-caracteristicas {
+
+        left: 0px;
+        margin-left: 50px;
+    }
+
+    .bgcuadrado-caracteristicas {
+        position: absolute;
+        right: 145px;
+        top: -15px;
+    }
+
+    .bgmas-caracteristicas {
+        position: absolute;
+        right: 0px;
+        top: 70px;
+    }
+
+    .textconfian-index-daktico div span {
+        font-size: 60px;
+    }
+
+    .gridconfian-index-daktico img {
+        width: 300px !important;
+    }
+
+    .text-diseñamos {
+        font-size: 36px;
+    }
+
+    .btndiseñamos div {
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 550px;
+        height: 100px;
+        font-size: 50px;
+        text-shadow: 5px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+    }
+
+    .btndiseñamos p {
+        font-size: 28px;
+        margin-top: 0px;
+    }
+
+    .imglogo-footer img {
+        width: 300px;
+    }
+
+    .gridprincipalfooter-index-daktico div div {
+        font-size: 34px;
+    }
+    .gridprincipalfooter-index-daktico div div a img {
+        height: 30px;
+        width: 30px;
+    }
+    .textfinalfooter-index-daktico {
+        font-size: 30px;
+    }
+    .copyright-index-daktico {
+        font-size: 27px;
+    }
+}
+
+@media (min-width: 2500px) {}
+
+
+/* FIIINNN RESPONSIVE PANTALLAS GRANDES EN HD */
+
+
+
+
+
+@media (max-width: 424px) {
+
+    .column1caracteristicas-index-daktico {
+        width: max-content !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .column1caracteristicas-index-daktico .itemcolum1caracteristicas span {
         padding-left: 30px;
 
@@ -1035,80 +1417,6 @@ footer {
 }
 
 @media (max-width: 599px) {
-
-    .admin-index-daktico {
-        width: 100%;
-        display: block;
-        height: max-content;
-    }
-
-    .admin-index-daktico span {
-        font-size: 9px;
-        margin-right: 10px;
-    }
-
-    .admin-index-daktico div {
-        margin-left: 5px;
-        justify-content: center;
-    }
-
-    .admin-index-daktico div span {
-        margin-left: 0px;
-    }
-
-    .menu-index-daktico {
-        width: 100%;
-        height: max-content;
-        display: block;
-        padding-bottom: 20px;
-    }
-
-    .logo-index-daktico {
-        padding-top: 15px;
-        width: 50%;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-
-    }
-
-    .logo-index-daktico img {
-        width: 150px;
-    }
-
-    .itemsmenu-index-daktico {
-        width: 100%;
-        display: block;
-        justify-content: right;
-    }
-
-    .itemsmenu-index-daktico .items-index {
-        text-align: center;
-        display: block;
-        align-items: center;
-
-    }
-
-    .itemsmenu-index-daktico .items-index div {
-        margin-top: 10px;
-    }
-
-    .itemsmenu-index-daktico div span {
-        font-weight: bold;
-        margin-right: 0px;
-    }
-
-    .btndemo-index-daktico {
-        width: 120px;
-        margin-right: auto;
-        margin-left: auto;
-        margin-top: 30px !important;
-
-    }
-
-    .btndemo-index-daktico span {
-        width: 120px;
-    }
 
     .contenedorprincipal-index-daktico {
         width: 100%;
@@ -1126,18 +1434,8 @@ footer {
         margin-left: 10px;
     }
 
-    .fila2principal-index-daktico {
-        width: 80%;
-        height: max-content;
-    }
 
-    .fila2principal-index-daktico h2 {
-        padding-left: 10px;
-        height: max-content;
-        font-size: 28px;
-        font-weight: normal !important;
 
-    }
 
     .fila3principal-index-daktico {
         margin-top: 30px;
@@ -1155,10 +1453,6 @@ footer {
 
     }
 
-    .fila4principal-index-daktico div {
-        display: flex;
-        align-items: center;
-    }
 
 
     .columnaprincipal2-index-daktico {
@@ -1175,19 +1469,27 @@ footer {
         margin-right: auto;
         width: 90%;
     }
+
     .gridopinion-index-daktico img {
         margin-bottom: 20px;
     }
-    .groupopinion-index-daktico {
 
+    .groupopinion-index-daktico {
         flex-direction: column;
-     
         margin-top: 0px;
         margin-bottom: 20px;
     }
 
-   
-   
+    .cuerpoopinion {
+        margin-left: 0px;
+    }
+
+    .imgopinion-center {
+        display: flex;
+        justify-content: center;
+    }
+
+
     .gridconfian-index-daktico {
         width: 90%;
         grid-template-columns: 50% 50%;
@@ -1223,44 +1525,38 @@ footer {
     }
 
     .gridcaracteristicas-index-daktico {
-        width: 90%;
+        width: 100%;
         grid-template-columns: 100%;
         margin-left: auto;
         margin-right: auto;
     }
-   
-    .itemcarac{
+
+    .itemcarac {
         margin-left: 30px !important;
         width: 250px;
     }
+
     .itemcarac span {
         width: 200px;
         font-size: 14px;
     }
-    .column1caracteristicas-index-daktico .itemcolum1caracteristicas span{
+
+    .column1caracteristicas-index-daktico .itemcolum1caracteristicas span {
         padding-left: 50px;
     }
 
-    /* .gridcaracteristicas-index-daktico div {
-        margin: 0;
-    } */
+
     .column1caracteristicas-index-daktico {
-        width: 80%;
+        width: max-content;
         margin-left: auto;
         margin-right: auto;
     }
 
-    .column1caracteristicas-index-daktico div {
-        color: #666666;
-        /* margin-top: 50px; */
-        cursor: pointer;
-        /* margin-left: 20px; */
 
-    }
 
     .itemcaracteristicaseleccionado {
         margin-left: 0px !important;
-        width: 210px;
+
         height: 50px;
     }
 
@@ -1289,21 +1585,16 @@ footer {
         font-size: 18px;
     }
 
+
     .divimg-caracteristicas {
         margin-top: 20px !important;
         width: 100% !important;
-    }
-
-    .divimg-caracteristicas {
-        margin-top: 20px;
-        width: 100%;
         text-align: justify;
     }
 
     .imggif-index-daktico {
         height: 250px;
-        width: 95%;
-
+        width: 300px;
         border-radius: 15px;
         color: #666666;
     }
@@ -1345,8 +1636,9 @@ footer {
         padding-right: 30px;
     }
 
-    .leermas-index-daktico{
-        align-items: baseline;
+    .leermas-index-daktico img {
+        margin-left: 7px;
+        margin-bottom: 0px !important;
     }
 
     .gridautor-index-daktico {
@@ -1421,7 +1713,16 @@ footer {
     }
 }
 
+@media (max-width: 800px) {
+    .column2caracteristicas-index-daktico {
+
+        margin: auto;
+        margin-top: 20px;
+    }
+}
+
 @media (min-width: 600px) and (max-width: 700px) {
+
 
     .gridcaracteristicas-index-daktico {
         width: 90%;
@@ -1437,6 +1738,22 @@ footer {
 }
 
 @media (min-width: 600px) and (max-width: 800px) {
+    .griddiseñamos {
+        grid-template-columns: 50% 50%;
+    }
+
+    .btndiseñamos div {
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 280px;
+        font-size: 20px;
+    }
+
+    .text-diseñamos {
+        text-align: center;
+    }
+
     .imglogo-footer {
         display: none;
     }
@@ -1472,7 +1789,7 @@ footer {
         letter-spacing: 0.5px;
         padding-bottom: 10px;
     }
-   
+
 }
 
 @media (min-width: 801px) and (max-width: 2800px) {
@@ -1495,40 +1812,20 @@ footer {
 }
 
 @media (min-width: 600px) and (max-width: 700px) {
-    .logo-index-daktico {
-        margin-left: 0px;
-        width: 15%;
+
+
+    .column1caracteristicas-index-daktico {
+        width: max-content;
+        margin: auto;
     }
 
-    .itemsmenu-index-daktico {
-        width: 85%;
+    .itemcarac {
+        width: 385px;
     }
 
-    .itemsmenu-index-daktico div span {
-        font-size: 14px;
-        margin-right: 20px;
-    }
-
-    .btndemo-index-daktico {
-        width: 110px;
-    }
-
-    .btndemo-index-daktico span {
-        width: 110px;
-        font-size: 10px !important;
-    }
-
-    .itemcaracteristicaseleccionado {
-        width: 200px !important;
-    }
-
-    .itemcaracteristicaseleccionado span {
-        width: 200px !important;
-        font-size: 16px;
-    }
-
-    .column1caracteristicas-index-daktico div {
-        margin-left: 10px;
+    .gridcaracteristicas-index-daktico {
+        display: grid;
+        grid-template-columns: 100%;
     }
 
     .imggif-index-daktico {
@@ -1562,20 +1859,21 @@ footer {
 }
 
 
-@media (min-width: 701px) and (max-width: 800px) {      
+@media (min-width: 701px) and (max-width: 800px) {
     .column1caracteristicas-index-daktico {
-        width: 60%;
+        width: max-content;
         margin: auto;
     }
 
-    /* .itemcaracteristicaseleccionado span {
-        width: 255px;
-        font-size: 16px;
-    } */
+    .itemcarac {
+        width: 385px;
+    }
+
     .gridcaracteristicas-index-daktico {
         display: grid;
         grid-template-columns: 100%;
     }
+
     .grupoimg-caracteristicas {
         overflow: hidden;
         width: 380px;
@@ -1589,10 +1887,23 @@ footer {
 }
 
 @media (min-width: 801px) and (max-width: 1020px) {
+    .column1caracteristicas-index-daktico .itemcolum1caracteristicas span {
+        padding-left: 30px;
+    }
+
+    .itemcaracteristicaseleccionado span {
+        padding-left: 30px !important;
+    }
+
+    .itemcarac {
+        width: 332px;
+    }
+
     .gridcaracteristicas-index-daktico {
         display: grid;
         grid-template-columns: 50% 50%;
     }
+
     .imgsimbolo-item2 {
         width: 320px;
         height: 380px;
@@ -1600,30 +1911,9 @@ footer {
         position: relative;
     }
 
-    .imgcircular-item2 {
-
-        right: 90px;
-        margin-top: 100px;
-    }
-
-    .imgcircular-item2 img {
-        width: 200px;
-        height: 200px;
-    }
-
-    .imgc-item2 {
-        position: relative;
-        left: 350px;
-        margin-top: 50px;
-    }
-
-    .imgx-item2 {
-
-        bottom: 100px;
-    }
 
     .column1caracteristicas-index-daktico {
-        width: 100%;
+        width: max-content;
         margin: auto;
     }
 
@@ -1637,6 +1927,22 @@ footer {
         z-index: 1;
 
     }
+
+    .griddiseñamos {
+        grid-template-columns: 50% 50%;
+    }
+
+    .btndiseñamos div {
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 280px;
+        font-size: 20px;
+    }
+
+    .text-diseñamos {
+        text-align: center;
+    }
 }
 
 @media (min-width: 600px) and (max-width: 1000px) {
@@ -1646,31 +1952,14 @@ footer {
 
     }
 
-    /* 
-  
-    .fila3principal-index-daktico {
-        width: 100%;
-        margin-left: 10px;
-      
-    } */
 
     .fila1principal-index-daktico h4 {
         font-size: 18px;
         margin-left: 10px;
     }
 
-    .fila2principal-index-daktico {
-        width: 80%;
-        height: max-content;
-    }
 
-    .fila2principal-index-daktico h2 {
-        padding-left: 10px;
-        height: max-content;
-        font-size: 28px;
-        font-weight: normal !important;
 
-    }
 
     .fila3principal-index-daktico {
         margin-top: 30px;
@@ -1688,15 +1977,6 @@ footer {
 
     }
 
-    .fila4principal-index-daktico div {
-        display: flex;
-        align-items: center;
-    }
-
-
-    /* .itemcaracteristicaseleccionado {
-        width: 300px;
-    } */
 
     .gridconfian-index-daktico {
         width: 95%;
@@ -1707,7 +1987,32 @@ footer {
 
 }
 
+@media (min-width: 901px) and (max-width: 1020px) {
+    .imggif-index-daktico {
+        width: 450px;
+        height: 320px;
+        border-radius: 44px;
+    }
+
+    .column1caracteristicas-index-daktico {
+        width: max-content;
+        margin-top: 0px;
+    }
+}
+
 @media (min-width: 1021px) and (max-width: 1200px) {
+    .column1caracteristicas-index-daktico .itemcolum1caracteristicas span {
+        padding-left: 30px;
+    }
+
+    .itemcaracteristicaseleccionado span {
+        padding-left: 30px !important;
+    }
+
+    .itemcarac {
+        width: 332px;
+    }
+
     .contenedorprincipal-index-daktico {
         height: max-content;
         padding-bottom: 50px;
@@ -1721,31 +2026,9 @@ footer {
         position: relative;
     }
 
-    .imgcircular-item2 {
-
-        right: 90px;
-        margin-top: 100px;
-    }
-
-    .imgcircular-item2 img {
-        width: 200px;
-        height: 200px;
-    }
-
-    .imgc-item2 {
-        position: relative;
-        left: 500px;
-        margin-top: 50px;
-    }
-
-    .imgx-item2 {
-
-        bottom: 100px;
-    }
-
     .column1caracteristicas-index-daktico {
-        width: 100%;
-        margin: auto;
+        width: max-content;
+        margin-top: 0px;
     }
 
     .column2caracteristicas-index-daktico {
@@ -1753,10 +2036,12 @@ footer {
         z-index: 1;
     }
 
-    .itemcaracteristicaseleccionado span {
-        width: 300px;
-        font-size: 16px;
+    .imggif-index-daktico {
+        width: 450px;
+        height: 320px;
+        border-radius: 44px;
     }
+
 
     .grupoimg-caracteristicas {
         overflow: hidden;
@@ -1766,9 +2051,6 @@ footer {
         position: absolute;
         right: 0px;
         z-index: -1;
-
-
-
     }
 
     .bgpunto-caracteristicas {
@@ -1789,13 +2071,36 @@ footer {
         right: 0px;
         top: 30px;
     }
+
+    .griddiseñamos {
+
+        grid-template-columns: 60% 40%;
+    }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 700px) {
+    .icono-menu {
+        display: none !important;
+    }
+
+    .icono-salir {
+        display: none !important;
+    }
+}
+
+@media (min-width: 1200px)and (max-width: 1999px) {
+    .column1caracteristicas-index-daktico {
+        margin-top: 0px;
+    }
 
     .column2caracteristicas-index-daktico {
+        width: 100%;
         position: relative;
         z-index: 1;
+    }
+
+    .divimg-caracteristicas {
+        position: absolute;
     }
 
     .itemcaracteristicaseleccionado span {
@@ -1806,21 +2111,17 @@ footer {
     .grupoimg-caracteristicas {
         overflow: hidden;
         width: 390px;
-        margin-top: -290px;
+        margin-top: -50px;
         height: 400px;
         position: absolute;
-        right: 156px;
+        right: 150px;
         z-index: -1;
-
-
-
     }
 
     .bgpunto-caracteristicas {
 
         left: 0px;
         margin-left: 50px;
-
     }
 
     .bgcuadrado-caracteristicas {
@@ -1832,100 +2133,894 @@ footer {
     .bgmas-caracteristicas {
         position: absolute;
         right: 0px;
-        top: 30px;
+        top: 70px;
     }
+
+    .imggif-index-daktico {
+        width: 450px;
+        height: 320px;
+        border-radius: 44px;
+    }
+
 }
 
-@media (min-width: 1200px) and (max-width: 1365px) {
+/* @media (min-width: 1200px) and (max-width: 1365px) {
     .contenedorprincipal-index-daktico {
         height: max-content;
         padding-bottom: 50px;
 
     }
 
-    .imgc-item2 {
-        position: relative;
-        left: 500px;
-        margin-top: 50px;
-    }
-}
-
-@media (min-width: 1367px) {
-    .contenedorprincipal-index-daktico {
-        height: max-content;
-        padding-bottom: 50px;
-
-    }
-
-    .imgc-item2 {
-        position: relative;
-        left: 600px;
-        margin-top: 50px;
-    }
 }
 
 @media (min-width: 1600px) {
-    .imgcircular-item2 {
-        position: absolute;
-        right: 240px;
-        margin-top: 0px;
+
+    .btndemo2-index-daktico {
+        border: 1px;
+        width: 250px;
     }
 
-    .imgc-item2 {
-        position: relative;
-        left: 775px;
-        margin-top: 50px;
-    }
-}
-
-@media (min-width: 1800px) {
-    .imgx-item2 {
-        position: absolute;
-        right: 20px;
-        bottom: auto;
+    .btndemo2-index-daktico::after {
+        width: 250px;
     }
 
-    .imgc-item2 {
-        position: relative;
-        left: 875px;
-        margin-top: 50px;
-    }
 
-    .imgcircular-item2 {
-        position: absolute;
-        right: 240px;
-        margin-top: 0px;
-    }
-}
+} */
 
-@media (min-width: 2400px) {
-    .imgcircular-item2 {
-        position: absolute;
-        right: 440px;
-        margin-top: 0px;
-    }
-
-    .imgc-item2 {
-        position: relative;
-        left: 1005px;
-        margin-top: 50px;
-    }
-}
 
 @media (min-width: 2700px) {
-    .imgcircular-item2 {
-        position: absolute;
-        right: 440px;
-        margin-top: 0px;
-    }
-
-    .imgc-item2 {
-        position: relative;
-        left: 1205px;
-        margin-top: 50px;
-    }
 
     .columnaprincipal2-index-daktico {
         margin-bottom: 100px;
     }
 }
+
+/* RESPONSIVE IMG COLUMNA 2 CONTAINER PRINCIPAL */
+@media (min-width: 801px) and (max-width: 900px) {
+    .groupimg-item2 {
+        width: 400px;
+        right: 0px;
+        position: absolute;
+    }
+
+    .imgcuadrado-item2 {
+        margin-top: -20px;
+        position: absolute;
+    }
+
+    .imgcuadrado2-item2 {
+        right: 30px;
+        position: absolute;
+    }
+
+    .imgcircular-item2 {
+        right: 75px;
+        margin-top: 200px;
+        position: absolute;
+    }
+
+    .imgpunto1-item2 {
+        position: absolute;
+        right: 20px;
+        margin-top: -20px;
+    }
+
+    .imgcirculochico-item2 {
+        position: absolute;
+        right: 10px;
+        margin-top: 100px;
+    }
+
+    .imgpunto2-item2 {
+        position: absolute;
+        right: 10px;
+        margin-top: 140px;
+    }
+
+    .imgc-item2 {
+        overflow: hidden;
+        width: 70px;
+        position: absolute;
+        right: 0px;
+        margin-top: 160px;
+    }
+
+    .imgx-item2 {
+        position: absolute;
+        right: 15px;
+        margin-top: 330px;
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1000px) {
+    .groupimg-item2 {
+        width: 500px;
+        right: 0px;
+        position: absolute;
+    }
+
+    .imgcuadrado-item2 {
+        margin-top: -20px;
+        position: absolute;
+    }
+
+    .imgcuadrado2-item2 {
+        right: 30px;
+        position: absolute;
+    }
+
+    .imgcircular-item2 {
+        right: 75px;
+        margin-top: 200px;
+        position: absolute;
+    }
+
+    .imgpunto1-item2 {
+        position: absolute;
+        right: 20px;
+        margin-top: -20px;
+    }
+
+    .imgcirculochico-item2 {
+        position: absolute;
+        right: 10px;
+        margin-top: 100px;
+    }
+
+    .imgpunto2-item2 {
+        position: absolute;
+        right: 10px;
+        margin-top: 140px;
+    }
+
+    .imgc-item2 {
+        overflow: hidden;
+        width: 70px;
+        position: absolute;
+        right: 0px;
+        margin-top: 160px;
+    }
+
+    .imgx-item2 {
+        position: absolute;
+        right: 15px;
+        margin-top: 330px;
+    }
+}
+
+@media (min-width: 1101px) and (max-width: 1200px) {
+    .groupimg-item2 {
+        width: 580px !important;
+
+    }
+}
+
+@media (min-width: 1001px) and (max-width: 1200px) {
+    .groupimg-item2 {
+        width: 530px;
+        right: 0px;
+        position: absolute;
+    }
+
+    .imgcuadrado-item2 {
+        margin-top: -20px;
+        position: absolute;
+    }
+
+    .imgcuadrado2-item2 {
+        right: 70px;
+        position: absolute;
+    }
+
+    .imgcircular-item2 {
+        right: 115px;
+        margin-top: 200px;
+        position: absolute;
+    }
+
+    .imgpunto1-item2 {
+        position: absolute;
+        right: 20px;
+        margin-top: -20px;
+    }
+
+    .imgcirculochico-item2 {
+        position: absolute;
+        right: 10px;
+        margin-top: 100px;
+    }
+
+    .imgpunto2-item2 {
+        position: absolute;
+        right: 10px;
+        margin-top: 140px;
+    }
+
+    .imgc-item2 {
+        overflow: hidden;
+        width: 70px;
+        position: absolute;
+        right: 0px;
+        margin-top: 160px;
+    }
+
+    .imgx-item2 {
+        position: absolute;
+        right: 15px;
+        margin-top: 330px;
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 1400px) {
+    .groupimg-item2 {
+        width: 650px;
+        right: 0px;
+        position: absolute;
+    }
+
+    .imgcuadrado-item2 {
+        margin-top: -20px;
+        position: absolute;
+    }
+
+    .imgcuadrado2-item2 {
+        right: 120px;
+        position: absolute;
+    }
+
+    .imgcircular-item2 {
+        right: 100px;
+        margin-top: 260px;
+        position: absolute;
+    }
+
+    .imgpunto1-item2 {
+        position: absolute;
+        right: 20px;
+        margin-top: -20px;
+    }
+
+    .imgcirculochico-item2 {
+        position: absolute;
+        right: 10px;
+        margin-top: 130px;
+    }
+
+    .imgpunto2-item2 {
+        position: absolute;
+        right: 10px;
+        margin-top: 170px;
+    }
+
+    .imgc-item2 {
+        overflow: hidden;
+        width: 70px;
+        position: absolute;
+        right: 0px;
+        margin-top: 250px;
+    }
+
+    .imgx-item2 {
+        position: absolute;
+        right: 15px;
+        margin-top: 415px;
+    }
+}
+
+@media (min-width: 1401px) and (max-width: 1600px) {
+    .groupimg-item2 {
+        width: 700px;
+        right: 0px;
+        position: absolute;
+    }
+
+    .imgcuadrado-item2 {
+        margin-top: -20px;
+        position: absolute;
+    }
+
+    .imgcuadrado2-item2 {
+        margin-top: 29px;
+        right: 137px;
+        position: absolute;
+    }
+
+    .imgcircular-item2 {
+        right: 150px;
+        margin-top: 260px;
+        position: absolute;
+    }
+
+    .imgcircular-item2 img {
+        width: 200px;
+    }
+
+    .imgpunto1-item2 {
+        position: absolute;
+        right: 50px;
+        margin-top: -20px;
+    }
+
+    .imgcirculochico-item2 {
+        position: absolute;
+        right: 30px;
+        margin-top: 130px;
+    }
+
+    .imgpunto2-item2 {
+        position: absolute;
+        right: 30px;
+        margin-top: 170px;
+    }
+
+    .imgc-item2 {
+        overflow: hidden;
+        width: 80px;
+        position: absolute;
+        right: 0px;
+        margin-top: 250px;
+    }
+
+    .imgx-item2 {
+        position: absolute;
+        right: 15px;
+        margin-top: 500px;
+    }
+}
+
+@media (min-width: 1601px) and (max-width: 1800px) {
+    .groupimg-item2 {
+        width: 800px;
+        right: 0px;
+        position: absolute;
+    }
+
+    .imgcuadrado-item2 {
+        margin-top: -20px;
+        position: absolute;
+    }
+
+    .imgcuadrado2-item2 {
+        margin-top: 29px;
+        right: 137px;
+        position: absolute;
+    }
+
+    .imgcircular-item2 {
+        right: 230px;
+        margin-top: 260px;
+        position: absolute;
+    }
+
+    .imgcircular-item2 img {
+        width: 200px;
+    }
+
+    .imgpunto1-item2 {
+        position: absolute;
+        right: 50px;
+        margin-top: -20px;
+    }
+
+    .imgcirculochico-item2 {
+        position: absolute;
+        right: 30px;
+        margin-top: 130px;
+    }
+
+    .imgpunto2-item2 {
+        position: absolute;
+        right: 30px;
+        margin-top: 170px;
+    }
+
+    .imgc-item2 {
+        overflow: hidden;
+        width: 80px;
+        position: absolute;
+        right: 0px;
+        margin-top: 250px;
+    }
+
+    .imgx-item2 {
+        position: absolute;
+        right: 15px;
+        margin-top: 500px;
+    }
+}
+
+@media (min-width: 1801px) and (max-width: 2000px) {
+    .groupimg-item2 {
+        width: 900px;
+        right: 0px;
+        position: absolute;
+    }
+
+    .imgcuadrado-item2 {
+        margin-top: -20px;
+        position: absolute;
+    }
+
+    .imgcuadrado2-item2 {
+        margin-top: 29px;
+        right: 250px;
+        position: absolute;
+    }
+
+    .imgcircular-item2 {
+        right: 280px;
+        margin-top: 260px;
+        position: absolute;
+    }
+
+    .imgcircular-item2 img {
+        width: 200px;
+    }
+
+    .imgpunto1-item2 {
+        position: absolute;
+        right: 150px;
+        margin-top: -20px;
+    }
+
+    .imgcirculochico-item2 {
+        position: absolute;
+        right: 100px;
+        margin-top: 130px;
+    }
+
+    .imgpunto2-item2 {
+        position: absolute;
+        right: 100px;
+        margin-top: 170px;
+    }
+
+    .imgc-item2 {
+        overflow: hidden;
+        width: 100px;
+        position: absolute;
+        right: 0px;
+        margin-top: 250px;
+    }
+
+    .imgx-item2 {
+        position: absolute;
+        right: 55px;
+        margin-top: 500px;
+    }
+}
+
+@media (min-width: 2001px) and (max-width: 2200px) {
+    .groupimg-item2 {
+        width: 1000px;
+        right: 0px;
+        position: absolute;
+    }
+
+
+
+    .imgcuadrado2-item2 {
+        margin-top: 29px;
+        right: 300px;
+        position: absolute;
+    }
+
+    .imgcircular-item2 {
+        right: 280px;
+        margin-top: 200px;
+        position: absolute;
+    }
+
+    .imgcircular-item2 img {
+        width: 300px;
+    }
+
+    .imgpunto1-item2 {
+        position: absolute;
+        right: 150px;
+        margin-top: -20px;
+    }
+
+    .imgcirculochico-item2 {
+        position: absolute;
+        right: 100px;
+        margin-top: 130px;
+    }
+
+    .imgpunto2-item2 {
+        position: absolute;
+        right: 100px;
+        margin-top: 170px;
+    }
+
+    .imgc-item2 {
+        overflow: hidden;
+        width: 100px;
+        position: absolute;
+        right: 0px;
+        margin-top: 250px;
+    }
+
+    .imgx-item2 {
+        position: absolute;
+        right: 55px;
+        margin-top: 500px;
+    }
+
+    .divimgsimbolo {
+        margin-top: 100px;
+    }
+
+    .imgsimbolo-item2 {
+        width: 640px;
+        height: 700px;
+        z-index: 1;
+        position: relative;
+    }
+
+    .imgcuadrado-item2 {
+        margin-top: -20px;
+        margin-left: -125px;
+        position: absolute;
+    }
+}
+
+@media (min-width: 2201px) and (max-width: 2400px) {
+    .groupimg-item2 {
+        width: 1000px;
+        right: 0px;
+        position: absolute;
+    }
+
+
+
+    .imgcuadrado2-item2 {
+        margin-top: 29px;
+        right: 350px;
+        position: absolute;
+    }
+
+    .imgcircular-item2 {
+        right: 350px;
+        margin-top: 200px;
+        position: absolute;
+    }
+
+    .imgcircular-item2 img {
+        width: 300px;
+    }
+
+    .imgpunto1-item2 {
+        position: absolute;
+        right: 150px;
+        margin-top: -20px;
+    }
+
+    .imgcirculochico-item2 {
+        position: absolute;
+        right: 100px;
+        margin-top: 130px;
+    }
+
+    .imgpunto2-item2 {
+        position: absolute;
+        right: 100px;
+        margin-top: 170px;
+    }
+
+    .imgc-item2 {
+        overflow: hidden;
+        width: 100px;
+        position: absolute;
+        right: 0px;
+        margin-top: 250px;
+    }
+
+    .imgx-item2 {
+        position: absolute;
+        right: 55px;
+        margin-top: 500px;
+    }
+
+    .divimgsimbolo {
+        margin-top: 100px;
+    }
+
+    .imgsimbolo-item2 {
+        width: 640px;
+        height: 700px;
+        z-index: 1;
+        position: relative;
+    }
+
+    .imgcuadrado-item2 {
+        margin-top: -20px;
+        margin-left: -125px;
+        position: absolute;
+    }
+}
+
+@media (min-width: 2401px) {
+    .groupimg-item2 {
+        width: 1000px;
+        right: 0px;
+        position: absolute;
+    }
+
+
+
+    .imgcuadrado2-item2 {
+        margin-top: 29px;
+        right: 350px;
+        position: absolute;
+    }
+
+    .imgcircular-item2 {
+        right: 300px;
+        margin-top: 350px;
+        position: absolute;
+    }
+
+    .imgcircular-item2 img {
+        width: 300px;
+    }
+
+    .imgpunto1-item2 {
+        position: absolute;
+        right: 150px;
+        margin-top: -20px;
+    }
+
+    .imgcirculochico-item2 {
+        position: absolute;
+        right: 100px;
+        margin-top: 130px;
+    }
+
+    .imgpunto2-item2 {
+        position: absolute;
+        right: 100px;
+        margin-top: 170px;
+    }
+
+    .imgc-item2 {
+        overflow: hidden;
+        width: 100px;
+        position: absolute;
+        right: 0px;
+        margin-top: 250px;
+    }
+
+    .imgx-item2 {
+        position: absolute;
+        right: 55px;
+        margin-top: 500px;
+    }
+
+    .divimgsimbolo {
+        margin-top: 100px;
+    }
+
+    .imgsimbolo-item2 {
+        width: 640px;
+        height: 700px;
+        z-index: 1;
+        position: relative;
+    }
+
+    .imgcuadrado-item2 {
+        margin-top: -100px;
+        margin-left: -125px;
+        position: absolute;
+    }
+}
+
+/* FIN RESPONSIVE SIMBOLOS */
+
+
+
+
+
+/* MENU RESPONSIVO */
+
+@media (max-width: 700px) {
+    .linea {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .icono-menu {
+        display: block;
+        width: 45px;
+        height: 45px;
+        cursor: pointer;
+    }
+
+    .admin-index-daktico {
+        width: 100%;
+        display: block;
+        height: 25px;
+    }
+
+    .admin-index-daktico span {
+        font-size: 12px;
+        margin-right: 10px;
+    }
+
+    .admin-index-daktico div {
+        margin-left: 5px;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .admin-index-daktico div span {
+        margin-left: 0px;
+    }
+
+    .menu-index-daktico {
+        width: 100%;
+        height: max-content;
+        display: block;
+        padding-bottom: 0px;
+    }
+
+    .logo-index-daktico {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+
+    }
+
+    .logo-index-daktico a {
+
+        justify-content: center;
+        width: 70%;
+        display: flex;
+    }
+
+    .logo-index-daktico a img {
+        width: 150px;
+    }
+
+    #divMenu {
+        display: none;
+    }
+
+    .itemsmenu-index-daktico {
+        width: 100%;
+        display: block;
+        justify-content: right;
+    }
+
+    .itemsmenu-index-daktico .items-index {
+        text-align: center;
+        display: block;
+        align-items: center;
+        padding-bottom: 10px;
+
+    }
+
+    .itemsmenu-index-daktico .items-index div {
+        margin-top: 10px;
+    }
+
+    .itemsmenu-index-daktico div a {
+        font-weight: bold;
+        margin-right: 0px;
+    }
+
+    .m-top-20 {
+        margin-top: 20px !important;
+    }
+
+    #btndemo-menu {
+        margin-right: auto;
+    }
+
+    .btndemo-index-daktico {
+
+        margin-right: auto;
+        margin-left: auto;
+
+    }
+}
+
+@media (min-width: 701px) and (max-width: 800px) {
+    .items-index div {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo-index-daktico {
+        width: 20%;
+        margin-left: 10px;
+    }
+
+    .itemsmenu-index-daktico {
+        width: 80%;
+    }
+
+    .logo-index-daktico a img {
+        width: 100px;
+    }
+
+    .itemsmenu-index-daktico div a {
+        margin-left: 15px;
+        font-weight: bold;
+        margin-right: 15px;
+    }
+
+    .wdt-120 {
+        width: 120px;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1200px) {
+    .items-index div {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo-index-daktico {
+        width: 20%;
+        margin-left: 10px;
+    }
+
+    .itemsmenu-index-daktico {
+        width: 80%;
+    }
+
+    .logo-index-daktico a img {
+        width: 120px;
+    }
+
+    .itemsmenu-index-daktico div a {
+        margin-left: 15px;
+        font-weight: bold;
+        margin-right: 15px;
+    }
+
+
+}
+
+@media (min-width: 2000px){
+    .admin-index-daktico {
+        height: 50px;
+    }
+
+    .admin-index-daktico span {
+        font-size: 24px;
+    }
+
+    .admin-index-daktico img {
+        width: 25px !important;
+        height: 25px !important;
+    }
+    .logo-index-daktico a img{
+        width: 300px;
+    }
+    
+    .admin-index-daktico div span {
+        margin-left: 10px;
+    }
+
+    .menu-index-daktico {
+        height: 120px;
+    }
+
+    .menu-index-daktico a {
+        font-size: 30px;
+    }
+
+    .btn1M {
+        width: 250px;
+        font-size: 30px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
+
+/* FIN MENU RESPONSIVO */

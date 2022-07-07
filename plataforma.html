@@ -16,7 +16,7 @@
         <div class="headerprincipal-index-daktico">
             <div class="admin-index-daktico">
                 <div>
-                    <span>Contactar con ventas</span>
+                    <span  @click="rutaFormulario()">Contactar con ventas</span>
                     <span>Soporte</span>
                     <!-- <span>Registrarse</span> -->
                     <div>
@@ -27,18 +27,26 @@
             </div>
             <div class="menu-index-daktico">
                 <div class="logo-index-daktico">
+                    <img src="img/icono-salir.svg" @click="changueMenuSalir()" id="btnSalir" class="icono-salir"
+                        width="45px" height="45px" alt="">
+                    <img src="img/icono-menu.svg" @click="changueMenu()" id="btnMenu" class="icono-menu" alt="">
                     <a href="index.html">
-                        <img src="img/Grupo 199.svg"  width="200px" alt=""></a>
+                        <img src="img/Grupo 199.svg" width="200px" alt=""></a>
                 </div>
-                <div class="itemsmenu-index-daktico">
+                <div class="itemsmenu-index-daktico" id="divMenu">
                     <div class="items-index">
-                        <div> <a href="plataforma.html">Plataforma<span class="linea"></span>
-                            </a></div>
-                            <div> <a href="#"> <span>Cursos</span></a></div>
-                        <div> <a href="casos.html"><span>Casos de éxito</span></a></div>
+                        <div>
+                            <a href="#">Plataforma
+                                <span class="linea"></span>
+                            </a>
+                        </div>
+                        <div> <a href="cursos.html"> Cursos</a></div>
+                        <div> <a href="casos.html">Casos de éxito</a></div>
                         <!-- <div> <a href="#"> <span>Precios</span></a></div>
-                        <div>   <a href="#"><span>Market</span></a></div> -->
-                        <div class="btndemo-index-daktico Roboto_medium"><span>Solicita una demo</span></div>
+                        <div> <a href="#"><span>Market</span></a></div> -->
+                        <!-- <div class="btndemo-index-daktico Roboto_medium" id="btndemo-menu"><span>Solicita una
+                                    demo</span></div> -->
+                        <div class="btndemo-index-daktico Roboto_medium btn1M" id="btndemo-menu"  @click="rutaFormulario()">Prueba Daktico</div>
                     </div>
                 </div>
             </div>
@@ -46,68 +54,32 @@
         <div class="principal-plataforma-daktico">
             <div class="gridplataforma-daktico">
                 <div class="item1-plataforma-daktico">
-                    <div class="gridfila1-plataforma-daktico txt-46"><span>Lorem Ipsum is simply dummy text of the
-                            printing industry</span></div>
-                    <div class="gridfila2-plataforma-daktico txt-24"><span>It has survived not only five centuries, but
-                            also the leap into electronic typesetting,
-                            remaining essentially unchanged.</span></div>
+                    <div class="gridfilaflotante-plataforma-daktico"><span>Estimula, desafía, analiza, crea.</span>
+                    </div>
+                    <div class="gridfila1-plataforma-daktico txt-42"><span>¡Deja de perseguir a tus trabajadores!</span>
+                    </div>
+                    <div class="gridfila2-plataforma-daktico txt-22"><span>Gestiona el aprendizaje de tus colaboradores
+                            con herramientas e-learning innovadores e inteligentes.</span></div>
                     <div class="gridfila3-plataforma-daktico">
-                        <div class="btndemo-plataforma-daktico Roboto_bold"><span>Solicita una demo</span></div>
+                        <div class="btnplataforma Roboto_bold" @click="rutaFormulario()">Solicita una demo
+                        </div>
                     </div>
                 </div>
                 <div class="videoprincipal-plataforma"><img src="img/video.PNG" alt=""></div>
             </div>
         </div>
 
-        <div class="caracteristicas-plataforma-daktico">
-            <div class="textcaracteristicas-plataforma-daktico"> <span>CARACTERÍSTICAS</span></div>
-            <div class="gridcaracteristicas-plataforma-daktico">
-                <div><span>Personalizable</span></div>
-                <div><span>Multidiciplinario</span></div>
-                <div><span>Seguro</span></div>
-                <div><span>Modular</span></div>
-                <div><span>Versátil</span></div>
-            </div>
-            <div>
-                <div class="videocaracteristicas-plataforma-daktico">
-                    <video controls>
-                        <source src="video/videoprueba.mp4" type="video/mp4">
-                    </video>
-                    <div class="textvideo-plataforma-daktico">
-                        <div><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                Ipsum has been the industry’s standard dummy text.</span></div>
-                    </div>
-                    <div >
-                        <div class="grupoimgbg-caracteristicas">
 
-                      <div class="img1bg-caracteristicas">
-                        <img src="img/Grupo 194.svg" alt="">
-                    </div>
-                    <div class="img2bg-caracteristicas">
-                        <img src="img/Trazado 79320.svg"  alt="">
-                    </div>
-                    <div class="img3bg-caracteristicas">
-                        <img src="img/Trazado 79326.svg" alt="">
-                    </div>
-                    <div class="img4bg-caracteristicas">
-                        <img src="img/Trazado 79331.svg"  alt="">
-                    </div>
-                    </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
 
         <div class="cursos-plataforma-daktico">
             <div class="gridplataforma-daktico">
                 <div class="item1-plataforma-daktico">
-                    <div class="gridfila1-plataforma-daktico txt-46"><span>Creación de cursos</span></div>
-                    <div class="gridfila2-plataforma-daktico txt-24"><span>It has survived not only five centuries, but
-                            also the leap into electronic typesetting,
-                            remaining essentially unchanged.</span></div>
+                    <div class="gridfila1-plataforma-daktico txt-36"><span>Crea cursos emocionantes</span></div>
+                    <div class="gridfila2-plataforma-daktico txt-24"><span>Deja que la plataforma te ayude a construir
+                            cursos según los objetivos que desees lograr.</span></div>
                     <div class="gridfila3-plataforma-daktico">
-                        <div class="btndemo-plataforma-daktico Roboto_medium"><span>Solicita una demo</span></div>
+                        <div class="btnplataforma Roboto_medium" @click="rutaFormulario()">Solicita una
+                            demo</div>
                     </div>
                 </div>
                 <div class="videoprincipal-plataforma">
@@ -130,12 +102,12 @@
                     </div>
                 </div>
                 <div class="item1-plataforma-daktico">
-                    <div class="gridfila1-plataforma-daktico txt-46"><span>Tipos de actividades</span></div>
-                    <div class="gridfila2-plataforma-daktico txt-24"><span>It has survived not only five centuries, but
-                            also the leap into electronic typesetting,
-                            remaining essentially unchanged.</span></div>
+                    <div class="gridfila1-plataforma-daktico txt-36"><span>Tipos de actividades</span></div>
+                    <div class="gridfila2-plataforma-daktico txt-24"><span>Disfruta de actividades colaborativas,
+                            competitivas, evaluativas e interactivas.</span></div>
                     <div class="gridfila3-plataforma-daktico">
-                        <div class="btndemo-plataforma-daktico Roboto_medium"><span>Solicita una demo</span></div>
+                        <div class="btnplataforma Roboto_medium" @click="rutaFormulario()"><span>Solicita
+                                una demo</span></div>
                     </div>
                 </div>
 
@@ -145,12 +117,12 @@
         <div class="rutas-plataforma-daktico">
             <div class="gridplataforma-daktico">
                 <div class="item1-plataforma-daktico">
-                    <div class="gridfila1-plataforma-daktico txt-46"><span>Rutas de aprendizaje</span></div>
-                    <div class="gridfila2-plataforma-daktico txt-24"><span>It has survived not only five centuries, but
-                            also the leap into electronic typesetting,
-                            remaining essentially unchanged.</span></div>
+                    <div class="gridfila1-plataforma-daktico txt-36"><span>Rutas de aprendizaje</span></div>
+                    <div class="gridfila2-plataforma-daktico txt-24"><span>Organiza el aprendizaje asignando rutas de
+                            aprendizaje y vincúlalas con habilidades y competencias.</span></div>
                     <div class="gridfila3-plataforma-daktico">
-                        <div class="btndemo-plataforma-daktico Roboto_medium"><span>Solicita una demo</span></div>
+                        <div class="btnplataforma Roboto_medium" @click="rutaFormulario()"><span>Solicita
+                                una demo</span></div>
                     </div>
                 </div>
                 <div class="videoprincipal-plataforma">
@@ -173,13 +145,14 @@
                     </div>
                 </div>
                 <div class="item1-plataforma-daktico">
-                    <div class="gridfila1-plataforma-daktico txt-46"><span>Reglas del juego</span></div>
-                    <div class="gridfila2-plataforma-daktico txt-24"><span>It has survived not only five centuries, but
-                            also the leap into electronic typesetting,
-                            remaining essentially unchanged.</span></div>
-                    <div class="gridfila3-plataforma-daktico">
-                        <div class="btndemo-plataforma-daktico Roboto_medium"><span>Solicita una demo</span></div>
-                    </div>
+                    <div class="gridfila1-plataforma-daktico txt-36"><span>Reglas del juego</span></div>
+                    <div class="gridfila2-plataforma-daktico txt-24"><span>Mientras adquieres y fortaleces tus
+                            habilidades, los cursos te dan puntos que te ayudan a visualizar tu progreso. Estos puntos
+                            te permiten mejorar tu posición en el ranking. Además, podrás canjear beneficios,
+                            recompensas y mejoras a tu avatar.</span></div>
+                    <!-- <div class="gridfila3-plataforma-daktico">
+                        <div class="btndemo-plataforma-daktico Roboto_medium" id="btndemo-menu">Prueba Daktico</div>
+                    </div> -->
                 </div>
             </div>
 
@@ -191,79 +164,79 @@
                         <div class="imgitemjuego"> <img src="img/gif.png" alt=""></div>
                         <div class="cuerpoitemjuego">
                             <div class="tituloitemjuego"><span>Avatar</span></div>
-                            <div class="descitemjuego">
+                            <!-- <div class="descitemjuego">
                                 <div><span>Lorem Ipsum is simply dummy text of the printing and
                                         typesetting industry. Lorem Ipsum has been the industry’s standard</span></div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="itemjuegos-plataforma-daktico">
                     <div class="carditemjuego">
                         <div class="imgitemjuego"> <img src="img/gif.png" alt=""></div>
                         <div class="cuerpoitemjuego">
                             <div class="tituloitemjuego"><span>Puntos</span></div>
-                            <div class="descitemjuego">
+                            <!-- <div class="descitemjuego">
                                 <div><span>Lorem Ipsum is simply dummy text of the printing and
                                         typesetting industry. Lorem Ipsum has been the industry’s standard</span></div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="itemjuegos-plataforma-daktico">
                     <div class="carditemjuego">
                         <div class="imgitemjuego"> <img src="img/gif.png" alt=""></div>
                         <div class="cuerpoitemjuego">
                             <div class="tituloitemjuego"><span>Recompensas</span></div>
-                            <div class="descitemjuego">
+                            <!-- <div class="descitemjuego">
                                 <div><span>Lorem Ipsum is simply dummy text of the printing and
                                         typesetting industry. Lorem Ipsum has been the industry’s standard</span></div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="itemjuegos-plataforma-daktico">
                     <div class="carditemjuego">
                         <div class="imgitemjuego"> <img src="img/gif.png" alt=""></div>
                         <div class="cuerpoitemjuego">
                             <div class="tituloitemjuego"><span>Ranking</span></div>
-                            <div class="descitemjuego">
+                            <!-- <div class="descitemjuego">
                                 <div><span>Lorem Ipsum is simply dummy text of the printing and
                                         typesetting industry. Lorem Ipsum has been the industry’s standard</span></div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="itemjuegos-plataforma-daktico">
                     <div class="carditemjuego">
                         <div class="imgitemjuego"> <img src="img/gif.png" alt=""></div>
                         <div class="cuerpoitemjuego">
                             <div class="tituloitemjuego"><span>Misiones</span></div>
-                            <div class="descitemjuego">
+                            <!-- <div class="descitemjuego">
                                 <div><span>Lorem Ipsum is simply dummy text of the printing and
                                         typesetting industry. Lorem Ipsum has been the industry’s standard</span></div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="itemjuegos-plataforma-daktico">
                     <div class="carditemjuego">
                         <div class="imgitemjuego"> <img src="img/gif.png" alt=""></div>
                         <div class="cuerpoitemjuego">
                             <div class="tituloitemjuego"><span>Copas</span></div>
-                            <div class="descitemjuego">
+                            <!-- <div class="descitemjuego">
                                 <div><span>Lorem Ipsum is simply dummy text of the printing and
                                         typesetting industry. Lorem Ipsum has been the industry’s standard</span></div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
-        
+
             </div>
 
 
@@ -275,12 +248,12 @@
         <div class="herramientas-plataforma-daktico">
             <div class="gridplataforma-daktico">
                 <div class="item1-plataforma-daktico">
-                    <div class="gridfila1-plataforma-daktico txt-46"><span>Herramientas administrativas</span></div>
-                    <div class="gridfila2-plataforma-daktico txt-24"><span>It has survived not only five centuries, but
-                            also the leap into electronic typesetting,
-                            remaining essentially unchanged.</span></div>
+                    <div class="gridfila1-plataforma-daktico txt-36"><span>Herramientas administrativas</span></div>
+                    <div class="gridfila2-plataforma-daktico txt-24"><span>Analiza, crea, automatiza y visualiza el
+                            progreso de tus trabajadores.</span></div>
                     <div class="gridfila3-plataforma-daktico">
-                        <div class="btndemo-plataforma-daktico Roboto_medium"><span>Solicita una demo</span></div>
+                        <div class="btnplataforma Roboto_medium" @click="rutaFormulario()"><span>Solicita
+                                una demo</span></div>
                     </div>
                 </div>
                 <div class="videoprincipal-plataforma">
@@ -294,24 +267,23 @@
 
             <div class="gridherramientas-plataforma-daktico">
                 <div class="itemgridherramienta"><img src="img/gif.png" alt="">
-                    <div class="tituloitemherramientas"><span>Configuración</span></div>
-                    <div class="descitemherramientas"><span>Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry.</span></div>
+                    <div class="tituloitemherramientas"><span>Administra</span></div>
+                    <div class="descitemherramientas"><span>Crea misiones, recompensas, rutas de aprendizajes, kits de
+                            bienvenida y más.</span></div>
                 </div>
                 <div class="itemgridherramienta"><img src="img/gif.png" alt="">
-                    <div class="tituloitemherramientas"><span>Personalización</span></div>
-                    <div class="descitemherramientas"><span>Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry.</span></div>
+                    <div class="tituloitemherramientas"><span>Personaliza</span></div>
+                    <div class="descitemherramientas"><span>Adapta el look and feel de la plataforma al branding de tu
+                            empresa y más.</span></div>
                 </div>
                 <div class="itemgridherramienta"><img src="img/gif.png" alt="">
-                    <div class="tituloitemherramientas"><span>Automatización</span></div>
-                    <div class="descitemherramientas"><span>Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry.</span></div>
+                    <div class="tituloitemherramientas"><span>Automatiza</span></div>
+                    <div class="descitemherramientas"><span>Envía recordatorios y avisos inteligentes.</span></div>
                 </div>
                 <div class="itemgridherramienta"><img src="img/gif.png" alt="">
-                    <div class="tituloitemherramientas"><span>Analítica</span></div>
-                    <div class="descitemherramientas"><span>Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry.</span></div>
+                    <div class="tituloitemherramientas"><span>Analiza</span></div>
+                    <div class="descitemherramientas"><span>Dashboard con data que te ayudará a tomar decisiones.</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -319,11 +291,8 @@
             <div class="titulopreguntas-plataforma-daktico"><span>PREGUNTAS FRECUENTES</span></div>
             <div class="gridpreguntas-plataforma-daktico">
                 <div class="item-gridpreguntas">
-                    <div class="pregunta-gridpreguntas"><span>What is Lorem Ipsum?</span></div>
-                    <div class="respuesta-gridpreguntas"><span>Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry. Lorem Ipsum
-                            has been the industry’s standard dummy text ever since the 1500s, when an unknown printer
-                            took a galley of type and scrambled it to make a type specimen book.</span></div>
+                    <div class="pregunta-gridpreguntas"><span>¿Se puede integrar con mi LMS?</span></div>
+                    <div class="respuesta-gridpreguntas"><span>Así es, se puede integrar con</span></div>
                 </div>
                 <div class="item-gridpreguntas">
                     <div class="pregunta-gridpreguntas"><span>Why do we use it?</span></div>
@@ -348,7 +317,7 @@
                 </div>
             </div>
             <div class="btnpreguntas-plataforma-daktico Roboto_bold">
-                <div><span>¿Tienes más preguntas?</span></div>
+                <div @click="rutaFormulario()"><span>¿Tienes más preguntas?</span></div>
             </div>
         </div>
         <footer>
@@ -357,13 +326,13 @@
                 <div>
                     <div><a href="">Blog</a> </div>
                     <div><a href="">Crear cursos</a></div>
-                    <div><a href="">Solicitar asesoria</a></div>
+                    <div><a href="formulario.html">Solicitar asesoria</a></div>
                     <div><a href="">Jugar ahora</a></div>
                     <div><a href="">Sobre la plataforma</a></div>
                 </div>
                 <div>
-                    <div><a href="">Contáctanos</a></div>
-                    <div><a href="">Solicita una demo</a></div>
+                    <div><a href="formulario.html">Contáctanos</a></div>
+                    <div><a href="formulario.html">Solicita una demo</a></div>
                     <div><a href="">Empresa</a></div>
                     <div><a href="">Términos y Condiciones</a></div>
                     <div><a href="">Políticas y Privacidad</a></div>
@@ -387,8 +356,8 @@
         </footer>
     </div>
 </body>
-<script src="https://code.jquery.com/jquery-3.6.0.js"
-integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="js/plataforma.js"></script>
@@ -425,4 +394,3 @@ integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="ano
 
     })
 </script>
-
